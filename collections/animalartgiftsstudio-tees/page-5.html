@@ -3,214 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Animalartgiftsstudio Tees at Animalartgiftsstudio</title>
-    <meta name="description" content="Find amazing Animalartgiftsstudio Tees at Animalartgiftsstudio. Featuring the latest animalartgiftsstudio, tees trends and styles.">
+    <title>Animalartgiftsstudio Tees | Tommy Design</title>
+    <meta name="description" content="Explore our Animalartgiftsstudio Tees collection at Animalartgiftsstudio. Browse exclusive animalartgiftsstudio, tees designs and order today.">
     <link rel="stylesheet" href="/assets/css/utilities.css">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        .header-dark {
-            background: #0a0a0a;
+        .header-vibrant {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 50%, #feca57 100%);
             padding: 20px 0;
-            border-bottom: 1px solid #1a1a1a;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            color: white;
+            position: relative;
+            overflow: hidden;
         }
-        .nav-dark {
+        .header-vibrant::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            transform: rotate(45deg);
+        }
+        .header-vibrant::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 300px;
+            height: 300px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 50%;
+        }
+        .nav-vibrant {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
+            z-index: 1;
         }
-        .logo-dark {
-            font-family: 'Poppins', sans-serif;
-            font-size: 26px;
-            font-weight: 700;
+        .logo-vibrant {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
             color: white;
             text-decoration: none;
-            background: linear-gradient(135deg, #00d2ff, #3a7bd5);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
-        .nav-links-dark {
+        .logo-vibrant span {
+            background: rgba(255,255,255,0.2);
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-weight: 700;
+        }
+        .nav-links-vibrant {
             list-style: none;
             display: flex;
-            gap: 30px;
+            gap: 35px;
             margin: 0;
             padding: 0;
             align-items: center;
         }
-        .nav-links-dark a {
-            color: rgba(255,255,255,0.7);
+        .nav-links-vibrant a {
+            color: white;
             text-decoration: none;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-            font-size: 14px;
+            font-weight: 600;
+            font-size: 15px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
             transition: all 0.3s ease;
-            padding: 5px 0;
             position: relative;
         }
-        .nav-links-dark a::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
-            transition: width 0.3s ease;
+        .nav-links-vibrant a::before {
+            content: '✦';
+            margin-right: 5px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
-        .nav-links-dark a:hover {
-            color: white;
+        .nav-links-vibrant a:hover::before {
+            opacity: 1;
         }
-        .nav-links-dark a:hover::before {
-            width: 100%;
+        .nav-links-vibrant a:hover {
+            transform: translateY(-2px);
         }
-        .nav-cta-dark {
-            background: linear-gradient(135deg, #00d2ff, #3a7bd5);
-            color: white !important;
+        .nav-cta-vibrant {
+            background: white;
+            color: #ff6b6b !important;
             padding: 10px 25px;
             border-radius: 50px;
-            font-weight: 600 !important;
+            font-weight: 700 !important;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             transition: all 0.3s ease !important;
         }
-        .nav-cta-dark::before {
+        .nav-cta-vibrant::before {
             display: none !important;
         }
-        .nav-cta-dark:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 210, 255, 0.3);
-            color: white !important;
+        .nav-cta-vibrant:hover {
+            transform: translateY(-3px) scale(1.05) !important;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3) !important;
         }
-        .nav-search-dark {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            padding: 8px 15px;
-            border-radius: 50px;
-            color: white;
-            font-family: 'Poppins', sans-serif;
-            font-size: 13px;
-            width: 200px;
-            transition: all 0.3s ease;
-        }
-        .nav-search-dark:focus {
-            outline: none;
-            border-color: #00d2ff;
-            background: rgba(255,255,255,0.1);
-        }
-        .nav-search-dark::placeholder {
-            color: rgba(255,255,255,0.3);
-        }
-        .mobile-toggle-dark {
+        .mobile-toggle-vibrant {
             display: none;
-            background: none;
-            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.2);
+            border: 2px solid white;
+            border-radius: 8px;
             padding: 8px 12px;
             color: white;
             font-size: 20px;
             cursor: pointer;
-            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .mobile-toggle-vibrant:hover {
+            background: rgba(255,255,255,0.3);
         }
         @media (max-width: 768px) {
-            .mobile-toggle-dark {
+            .mobile-toggle-vibrant {
                 display: block;
             }
-            .nav-links-dark {
+            .nav-links-vibrant {
                 display: none;
                 flex-direction: column;
                 position: absolute;
                 top: 80px;
                 left: 20px;
                 right: 20px;
-                background: #0a0a0a;
+                background: rgba(255,255,255,0.95);
                 padding: 25px;
                 border-radius: 12px;
-                border: 1px solid #1a1a1a;
+                box-shadow: 0 20px 50px rgba(0,0,0,0.2);
                 gap: 15px;
+                backdrop-filter: blur(10px);
             }
-            .nav-links-dark.active {
+            .nav-links-vibrant.active {
                 display: flex;
             }
-            .nav-search-dark {
-                width: 100%;
+            .nav-links-vibrant a {
+                color: #333;
+                text-shadow: none;
             }
-            .nav-cta-dark {
-                width: 100%;
-                text-align: center;
+            .nav-cta-vibrant {
+                color: #ff6b6b !important;
             }
         }
     </style>
 </head>
 <body>
-    <header class="header-dark">
+    <header class="header-vibrant">
         <div class="container">
-            <nav class="nav-dark">
-                <a href="/" class="logo-dark">✦ ZazzleShop</a>
-                <button class="mobile-toggle-dark" onclick="this.nextElementSibling.classList.toggle('active')">☰</button>
-                <ul class="nav-links-dark">
+            <nav class="nav-vibrant">
+                <a href="/" class="logo-vibrant">✦ Tommy Design</a>
+                <button class="mobile-toggle-vibrant" onclick="this.nextElementSibling.classList.toggle('active')">☰</button>
+                <ul class="nav-links-vibrant">
                     <li><a href="/">Home</a></li>
-                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="/collections/">Collections</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><input type="text" class="nav-search-dark" placeholder="Search products..."></li>
-                    <li><a href="/collections" class="nav-cta-dark">Shop Now</a></li>
+                    <li><a href="/collections/" class="nav-cta-vibrant">Shop Now</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-<div class="collection-hero-modern">
+<div class="collection-header-vibrant">
     <div class="container">
-        <div class="collection-hero-content">
-
-            <div class="collection-breadcrumb">
-                <a href="/">Home</a>
-                <span>/</span>
-                <a href="#collections">Collections</a>
-                <span>/</span>
-                <span class="current">
-                    Animalartgiftsstudio Tees                </span>
-            </div>
-
+        <div class="collection-header-content">
+            <span class="collection-category-tag">? Collection</span>
             <h1>Animalartgiftsstudio Tees</h1>
-
-            <p>Welcome to our exclusive Animalartgiftsstudio Tees collection at Animalartgiftsstudio. Discover the perfect animalartgiftsstudio, tees for your home and lifestyle.</p>
-            <div class="collection-meta">
-                <span class="product-count-badge">
-                    4 Products
-                </span>
+            <p>Discover unique Animalartgiftsstudio Tees at Animalartgiftsstudio. Shop now and experience the difference in quality and design.</p>            <div class="collection-stats-vibrant">
+                <div class="stat-item-vibrant">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Products</span>
+                </div>
+                <div class="stat-item-vibrant">
+                    <span class="stat-number">? 4.9</span>
+                    <span class="stat-label">Rating</span>
+                </div>
+                <div class="stat-item-vibrant">
+                    <span class="stat-number">?</span>
+                    <span class="stat-label">Free Shipping</span>
+                </div>
             </div>
-
         </div>
     </div>
 </div>
 
-<div class="collection-products-modern">
+<div class="collection-products-vibrant">
     <div class="container">
-
-        <div class="collection-toolbar">
-            <div class="toolbar-left">
-                <span class="results-count">
-                    Showing 4 products
-                </span>
-            </div>
-
-            <div class="toolbar-right">
-                <select class="sort-select">
-                    <option>Sort by: Featured</option>
-                    <option>Price: Low to High</option>
-                    <option>Price: High to Low</option>
-                    <option>Newest</option>
-                </select>
-
-                <div class="view-options">
-                    <button class="view-grid active">⊞</button>
-                    <button class="view-list">≡</button>
-                </div>
-            </div>
-        </div>
-
         <div class="grid">
                     <div class="product-card">
             <a href="https://www.zazzle.com/arctic_fox_black_and_white_tee-256099060938964712" target="_blank" rel="noopener noreferrer">
@@ -253,206 +232,146 @@
             </a>
         </div>
                 </div>
-
-        <div class="pagination"><a href="/collections/animalartgiftsstudio-tees/page-4.html">‹ Previous</a><a href="/collections/animalartgiftsstudio-tees/">1</a><span>...</span><a href="/collections/animalartgiftsstudio-tees/page-3.html">3</a><a href="/collections/animalartgiftsstudio-tees/page-4.html">4</a><span class="active">5</span></div>
-    </div>
+        <div class="pagination"><a href="/collections/animalartgiftsstudio-tees/page-4.html">‹ Previous</a><a href="/collections/animalartgiftsstudio-tees/">1</a><span>...</span><a href="/collections/animalartgiftsstudio-tees/page-3.html">3</a><a href="/collections/animalartgiftsstudio-tees/page-4.html">4</a><span class="active">5</span></div>    </div>
 </div>
 
 <style>
-    .collection-hero-modern {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    .collection-header-vibrant {
+        background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 50%, #feca57 100%);
         color: white;
-        padding: 60px 0 40px;
-        margin-bottom: 40px;
+        padding: 80px 0 60px;
+        position: relative;
+        overflow: hidden;
     }
-
-    .collection-breadcrumb {
-        font-size: 14px;
-        opacity: 0.8;
-        margin-bottom: 15px;
+    .collection-header-vibrant::before {
+        content: '?';
+        position: absolute;
+        font-size: 400px;
+        right: -80px;
+        top: -150px;
+        opacity: 0.05;
+        transform: rotate(20deg);
     }
-
-    .collection-breadcrumb a {
-        color: white;
-        text-decoration: none;
-        transition: opacity 0.3s ease;
+    .collection-header-content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
     }
-
-    .collection-breadcrumb a:hover {
-        opacity: 0.7;
+    .collection-category-tag {
+        display: inline-block;
+        background: rgba(255,255,255,0.2);
+        padding: 6px 20px;
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        backdrop-filter: blur(10px);
     }
-
-    .collection-breadcrumb span {
-        margin: 0 8px;
-    }
-
-    .collection-breadcrumb .current {
-        opacity: 0.6;
-    }
-
-    .collection-hero-content h1 {
-        font-size: 40px;
+    .collection-header-content h1 {
+        font-size: 44px;
+        font-weight: 800;
         margin: 0 0 15px;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
     }
-
-    .collection-hero-content p {
+    .collection-header-content p {
         font-size: 18px;
         opacity: 0.9;
         max-width: 600px;
+        margin: 0 auto 30px;
         line-height: 1.6;
     }
-
-    .collection-meta {
-        margin-top: 20px;
-    }
-
-    .product-count-badge {
-        display: inline-block;
-        background: rgba(255,255,255,0.2);
-        padding: 6px 18px;
-        border-radius: 50px;
-        font-size: 14px;
-        backdrop-filter: blur(10px);
-    }
-
-    .collection-products-modern {
-        padding-bottom: 60px;
-    }
-
-    .collection-toolbar {
+    .collection-stats-vibrant {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 40px;
+    }
+    .stat-item-vibrant {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        margin-bottom: 30px;
-        padding: 15px 0;
-        border-bottom: 1px solid #e9ecef;
-        flex-wrap: wrap;
-        gap: 15px;
     }
-
-    .toolbar-left {
-        display: flex;
-        align-items: center;
-        gap: 15px;
+    .stat-number {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
     }
-
-    .results-count {
-        font-size: 14px;
-        color: #666;
+    .stat-label {
+        font-size: 13px;
+        opacity: 0.8;
+        margin-top: 3px;
     }
-
-    .toolbar-right {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .sort-select {
-        padding: 8px 15px;
-        border: 1px solid #e9ecef;
-        border-radius: 6px;
-        background: white;
-        font-size: 14px;
-        color: #333;
-        cursor: pointer;
-    }
-
-    .sort-select:focus {
-        outline: none;
-        border-color: #667eea;
-    }
-
-    .view-options {
-        display: flex;
-        gap: 5px;
-    }
-
-    .view-options button {
-        padding: 6px 10px;
-        border: 1px solid #e9ecef;
-        background: white;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 16px;
-        transition: all 0.3s ease;
-        color: #999;
-    }
-
-    .view-options button.active {
-        background: #667eea;
-        border-color: #667eea;
-        color: white;
-    }
-
-    .view-options button:hover:not(.active) {
+    .collection-products-vibrant {
+        padding: 60px 0;
         background: #f8f9fa;
     }
-
     @media (max-width: 768px) {
-        .collection-hero-content h1 {
-            font-size: 28px;
+        .collection-header-content h1 {
+            font-size: 30px;
         }
-
-        .collection-toolbar {
-            flex-direction: column;
-            align-items: stretch;
-        }
-
-        .toolbar-right {
+        .collection-stats-vibrant {
+            gap: 20px;
             flex-wrap: wrap;
         }
-
-        .sort-select {
-            flex: 1;
-        }
     }
-</style>            </main>
-            <footer class="footer-minimal-dark">
+</style>
+            </main>
+            <footer class="footer-elegant">
                 <div class="container">
-                    <div class="footer-grid-minimal">
-                        <div class="footer-col-minimal">
-                            <h3 class="footer-logo-minimal">✦ ZazzleShop</h3>
-                            <p class="footer-desc-minimal">Discover unique products from independent creators around the world.</p>
-                            <div class="footer-social-minimal">
-                                <a href="#" aria-label="Facebook">📘</a>
-                                <a href="#" aria-label="Instagram">📸</a>
-                                <a href="#" aria-label="Twitter">🐦</a>
-                                <a href="#" aria-label="Pinterest">📌</a>
-                            </div>
+                    <div class="footer-divider-elegant">
+                        <span>✦</span>
+                    </div>
+                    <div class="footer-grid-elegant">
+                        <div class="footer-col-elegant">
+                            <h3 class="footer-logo-elegant">Tommy Design</h3>
+                            <p class="footer-desc-elegant">Curating exceptional designs for discerning individuals since 2020.</p>
+                            <address class="footer-address-elegant">
+                                123 Creative Lane<br>
+                                Design District, NY 10001<br>
+                                United States
+                            </address>
                         </div>
-                        <div class="footer-col-minimal">
-                            <h4>Quick Links</h4>
+                        <div class="footer-col-elegant">
+                            <h4>Discover</h4>
                             <ul>
                                 <li><a href="/">Home</a></li>
-                                <li><a href="#collections">Collections</a></li>
-                                <li><a href="#about">About Us</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="/collections/">Collections</a></li>
+                                <li><a href="#about">Our Story</a></li>
+                                <li><a href="#">Lookbook</a></li>
                             </ul>
                         </div>
-                        <div class="footer-col-minimal">
-                            <h4>Support</h4>
+                        <div class="footer-col-elegant">
+                            <h4>Service</h4>
                             <ul>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Shipping Policy</a></li>
-                                <li><a href="#">Returns</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Shipping Info</a></li>
+                                <li><a href="#">Returns & Exchanges</a></li>
+                                <li><a href="#">Gift Cards</a></li>
+                                <li><a href="#">Bulk Orders</a></li>
                             </ul>
                         </div>
-                        <div class="footer-col-minimal">
-                            <h4>Newsletter</h4>
-                            <p class="footer-newsletter-text">Subscribe for exclusive deals and updates.</p>
-                            <form class="footer-newsletter-form">
-                                <input type="email" placeholder="Your email" required>
-                                <button type="submit">Subscribe</button>
-                            </form>
+                        <div class="footer-col-elegant">
+                            <h4>Connect</h4>
+                            <div class="footer-social-elegant">
+                                <a href="#" class="social-elegant">Facebook</a>
+                                <a href="#" class="social-elegant">Instagram</a>
+                                <a href="#" class="social-elegant">Pinterest</a>
+                                <a href="#" class="social-elegant">Twitter</a>
+                            </div>
+                            <div class="footer-newsletter-elegant">
+                                <p>Subscribe for inspirations</p>
+                                <form>
+                                    <input type="email" placeholder="Enter email" required>
+                                    <button type="submit">→</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                    <div class="footer-bottom-minimal">
-                        <p>&copy; 2026 ZazzleShop. All rights reserved.</p>
-                        <div class="footer-payments-minimal">
-                            <span>💳</span>
-                            <span>🔒</span>
-                            <span>✓</span>
+                    <div class="footer-bottom-elegant">
+                        <p>&copy; 2026 Tommy Design. All rights reserved.</p>
+                        <div class="footer-legal-elegant">
+                            <a href="#">Privacy</a>
+                            <a href="#">Terms</a>
+                            <a href="#">Cookies</a>
                         </div>
                     </div>
                 </div>
@@ -460,134 +379,190 @@
         </body>
         </html>
         <style>
-            .footer-minimal-dark {
+            .footer-elegant {
                 background: #1a1a2e;
                 color: rgba(255,255,255,0.8);
                 padding: 60px 0 30px;
                 margin-top: 60px;
+                font-family: 'Roboto', sans-serif;
             }
-            .footer-grid-minimal {
+            .footer-divider-elegant {
+                text-align: center;
+                color: #c9a86c;
+                font-size: 24px;
+                margin-bottom: 40px;
+                position: relative;
+            }
+            .footer-divider-elegant::before,
+            .footer-divider-elegant::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                width: 45%;
+                height: 1px;
+                background: rgba(255,255,255,0.05);
+            }
+            .footer-divider-elegant::before {
+                left: 0;
+            }
+            .footer-divider-elegant::after {
+                right: 0;
+            }
+            .footer-grid-elegant {
                 display: grid;
                 grid-template-columns: 2fr 1fr 1fr 1.5fr;
-                gap: 40px;
+                gap: 50px;
                 margin-bottom: 40px;
             }
-            .footer-logo-minimal {
-                font-size: 24px;
+            .footer-logo-elegant {
+                font-family: 'Playfair Display', serif;
+                font-size: 28px;
                 font-weight: 700;
                 color: white;
-                margin-bottom: 15px;
-                font-family: 'Inter', sans-serif;
+                margin: 0 0 15px;
             }
-            .footer-desc-minimal {
+            .footer-logo-elegant span {
+                color: #c9a86c;
+                font-weight: 400;
+            }
+            .footer-desc-elegant {
                 font-size: 14px;
-                line-height: 1.6;
-                margin-bottom: 20px;
+                line-height: 1.8;
                 opacity: 0.7;
-            }
-            .footer-social-minimal {
-                display: flex;
-                gap: 15px;
-            }
-            .footer-social-minimal a {
-                color: rgba(255,255,255,0.6);
-                text-decoration: none;
-                font-size: 20px;
-                transition: all 0.3s ease;
-            }
-            .footer-social-minimal a:hover {
-                color: #6c63ff;
-                transform: translateY(-3px);
-            }
-            .footer-col-minimal h4 {
-                color: white;
-                font-size: 16px;
-                font-weight: 600;
                 margin-bottom: 20px;
-                font-family: 'Inter', sans-serif;
+                font-weight: 300;
             }
-            .footer-col-minimal ul {
+            .footer-address-elegant {
+                font-style: normal;
+                font-size: 13px;
+                line-height: 1.8;
+                opacity: 0.6;
+                font-weight: 300;
+            }
+            .footer-col-elegant h4 {
+                color: white;
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                font-family: 'Roboto', sans-serif;
+            }
+            .footer-col-elegant ul {
                 list-style: none;
                 padding: 0;
                 margin: 0;
             }
-            .footer-col-minimal ul li {
-                margin-bottom: 10px;
+            .footer-col-elegant ul li {
+                margin-bottom: 12px;
             }
-            .footer-col-minimal ul a {
-                color: rgba(255,255,255,0.7);
+            .footer-col-elegant ul a {
+                color: rgba(255,255,255,0.6);
                 text-decoration: none;
                 font-size: 14px;
-                transition: color 0.3s ease;
+                font-weight: 300;
+                transition: all 0.3s ease;
+                letter-spacing: 0.5px;
             }
-            .footer-col-minimal ul a:hover {
-                color: #6c63ff;
+            .footer-col-elegant ul a:hover {
+                color: #c9a86c;
+                padding-left: 5px;
             }
-            .footer-newsletter-text {
-                font-size: 14px;
-                opacity: 0.7;
-                margin-bottom: 15px;
-            }
-            .footer-newsletter-form {
+            .footer-social-elegant {
                 display: flex;
+                flex-direction: column;
                 gap: 10px;
+                margin-bottom: 25px;
             }
-            .footer-newsletter-form input {
+            .social-elegant {
+                color: rgba(255,255,255,0.6);
+                text-decoration: none;
+                font-size: 13px;
+                font-weight: 300;
+                transition: all 0.3s ease;
+                letter-spacing: 1px;
+            }
+            .social-elegant:hover {
+                color: #c9a86c;
+                padding-left: 5px;
+            }
+            .footer-newsletter-elegant p {
+                font-size: 13px;
+                margin: 0 0 10px;
+                opacity: 0.7;
+                font-weight: 300;
+            }
+            .footer-newsletter-elegant form {
+                display: flex;
+                gap: 5px;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+            .footer-newsletter-elegant input {
                 flex: 1;
-                padding: 10px 15px;
-                border: 1px solid rgba(255,255,255,0.1);
-                border-radius: 4px;
-                background: rgba(255,255,255,0.05);
+                background: none;
+                border: none;
+                padding: 10px 0;
                 color: white;
-                font-size: 14px;
+                font-size: 13px;
             }
-            .footer-newsletter-form input::placeholder {
+            .footer-newsletter-elegant input::placeholder {
                 color: rgba(255,255,255,0.3);
             }
-            .footer-newsletter-form input:focus {
+            .footer-newsletter-elegant input:focus {
                 outline: none;
-                border-color: #6c63ff;
             }
-            .footer-newsletter-form button {
-                padding: 10px 20px;
-                background: #6c63ff;
-                color: white;
+            .footer-newsletter-elegant button {
+                background: none;
                 border: none;
-                border-radius: 4px;
-                font-weight: 600;
+                color: #c9a86c;
+                font-size: 20px;
                 cursor: pointer;
-                transition: background 0.3s ease;
-                white-space: nowrap;
+                padding: 5px 10px;
+                transition: all 0.3s ease;
             }
-            .footer-newsletter-form button:hover {
-                background: #5a52d5;
+            .footer-newsletter-elegant button:hover {
+                transform: translateX(5px);
             }
-            .footer-bottom-minimal {
+            .footer-bottom-elegant {
                 border-top: 1px solid rgba(255,255,255,0.05);
                 padding-top: 30px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                font-size: 13px;
-                opacity: 0.6;
+                font-size: 12px;
+                opacity: 0.5;
+                font-weight: 300;
+                letter-spacing: 1px;
             }
-            .footer-payments-minimal {
+            .footer-legal-elegant {
                 display: flex;
-                gap: 15px;
-                font-size: 24px;
+                gap: 30px;
+            }
+            .footer-legal-elegant a {
+                color: rgba(255,255,255,0.5);
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+            .footer-legal-elegant a:hover {
+                color: #c9a86c;
             }
             @media (max-width: 768px) {
-                .footer-grid-minimal {
+                .footer-grid-elegant {
                     grid-template-columns: 1fr;
                     gap: 30px;
                 }
-                .footer-newsletter-form {
-                    flex-direction: column;
+                .footer-divider-elegant::before,
+                .footer-divider-elegant::after {
+                    width: 30%;
                 }
-                .footer-bottom-minimal {
+                .footer-bottom-elegant {
                     flex-direction: column;
                     gap: 15px;
                     text-align: center;
+                }
+                .footer-legal-elegant {
+                    flex-wrap: wrap;
+                    justify-content: center;
                 }
             }
         </style>

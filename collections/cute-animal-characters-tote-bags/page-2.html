@@ -3,536 +3,455 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Cute Animal Characters Tote Bags at Cute Animal Characters</title>
-    <meta name="description" content="Find amazing Cute Animal Characters Tote Bags at Cute Animal Characters. Featuring the latest cute, animal, characters, tote trends and styles.">
+    <title>Cute Animal Characters Tote Bags | Tommy Design</title>
+    <meta name="description" content="Explore our Cute Animal Characters Tote Bags collection at Cute Animal Characters. Browse exclusive cute, animal, characters, tote designs and order today.">
     <link rel="stylesheet" href="/assets/css/utilities.css">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        .header-dark {
-            background: #0a0a0a;
+        .header-vibrant {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 50%, #feca57 100%);
             padding: 20px 0;
-            border-bottom: 1px solid #1a1a1a;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            color: white;
+            position: relative;
+            overflow: hidden;
         }
-        .nav-dark {
+        .header-vibrant::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            transform: rotate(45deg);
+        }
+        .header-vibrant::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 300px;
+            height: 300px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 50%;
+        }
+        .nav-vibrant {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
+            z-index: 1;
         }
-        .logo-dark {
-            font-family: 'Poppins', sans-serif;
-            font-size: 26px;
-            font-weight: 700;
+        .logo-vibrant {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
             color: white;
             text-decoration: none;
-            background: linear-gradient(135deg, #00d2ff, #3a7bd5);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
-        .nav-links-dark {
+        .logo-vibrant span {
+            background: rgba(255,255,255,0.2);
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-weight: 700;
+        }
+        .nav-links-vibrant {
             list-style: none;
             display: flex;
-            gap: 30px;
+            gap: 35px;
             margin: 0;
             padding: 0;
             align-items: center;
         }
-        .nav-links-dark a {
-            color: rgba(255,255,255,0.7);
+        .nav-links-vibrant a {
+            color: white;
             text-decoration: none;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-            font-size: 14px;
+            font-weight: 600;
+            font-size: 15px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
             transition: all 0.3s ease;
-            padding: 5px 0;
             position: relative;
         }
-        .nav-links-dark a::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
-            transition: width 0.3s ease;
+        .nav-links-vibrant a::before {
+            content: '✦';
+            margin-right: 5px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
-        .nav-links-dark a:hover {
-            color: white;
+        .nav-links-vibrant a:hover::before {
+            opacity: 1;
         }
-        .nav-links-dark a:hover::before {
-            width: 100%;
+        .nav-links-vibrant a:hover {
+            transform: translateY(-2px);
         }
-        .nav-cta-dark {
-            background: linear-gradient(135deg, #00d2ff, #3a7bd5);
-            color: white !important;
+        .nav-cta-vibrant {
+            background: white;
+            color: #ff6b6b !important;
             padding: 10px 25px;
             border-radius: 50px;
-            font-weight: 600 !important;
+            font-weight: 700 !important;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             transition: all 0.3s ease !important;
         }
-        .nav-cta-dark::before {
+        .nav-cta-vibrant::before {
             display: none !important;
         }
-        .nav-cta-dark:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 210, 255, 0.3);
-            color: white !important;
+        .nav-cta-vibrant:hover {
+            transform: translateY(-3px) scale(1.05) !important;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3) !important;
         }
-        .nav-search-dark {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            padding: 8px 15px;
-            border-radius: 50px;
-            color: white;
-            font-family: 'Poppins', sans-serif;
-            font-size: 13px;
-            width: 200px;
-            transition: all 0.3s ease;
-        }
-        .nav-search-dark:focus {
-            outline: none;
-            border-color: #00d2ff;
-            background: rgba(255,255,255,0.1);
-        }
-        .nav-search-dark::placeholder {
-            color: rgba(255,255,255,0.3);
-        }
-        .mobile-toggle-dark {
+        .mobile-toggle-vibrant {
             display: none;
-            background: none;
-            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.2);
+            border: 2px solid white;
+            border-radius: 8px;
             padding: 8px 12px;
             color: white;
             font-size: 20px;
             cursor: pointer;
-            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .mobile-toggle-vibrant:hover {
+            background: rgba(255,255,255,0.3);
         }
         @media (max-width: 768px) {
-            .mobile-toggle-dark {
+            .mobile-toggle-vibrant {
                 display: block;
             }
-            .nav-links-dark {
+            .nav-links-vibrant {
                 display: none;
                 flex-direction: column;
                 position: absolute;
                 top: 80px;
                 left: 20px;
                 right: 20px;
-                background: #0a0a0a;
+                background: rgba(255,255,255,0.95);
                 padding: 25px;
                 border-radius: 12px;
-                border: 1px solid #1a1a1a;
+                box-shadow: 0 20px 50px rgba(0,0,0,0.2);
                 gap: 15px;
+                backdrop-filter: blur(10px);
             }
-            .nav-links-dark.active {
+            .nav-links-vibrant.active {
                 display: flex;
             }
-            .nav-search-dark {
-                width: 100%;
+            .nav-links-vibrant a {
+                color: #333;
+                text-shadow: none;
             }
-            .nav-cta-dark {
-                width: 100%;
-                text-align: center;
+            .nav-cta-vibrant {
+                color: #ff6b6b !important;
             }
         }
     </style>
 </head>
 <body>
-    <header class="header-dark">
+    <header class="header-vibrant">
         <div class="container">
-            <nav class="nav-dark">
-                <a href="/" class="logo-dark">✦ ZazzleShop</a>
-                <button class="mobile-toggle-dark" onclick="this.nextElementSibling.classList.toggle('active')">☰</button>
-                <ul class="nav-links-dark">
+            <nav class="nav-vibrant">
+                <a href="/" class="logo-vibrant">✦ Tommy Design</a>
+                <button class="mobile-toggle-vibrant" onclick="this.nextElementSibling.classList.toggle('active')">☰</button>
+                <ul class="nav-links-vibrant">
                     <li><a href="/">Home</a></li>
-                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="/collections/">Collections</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><input type="text" class="nav-search-dark" placeholder="Search products..."></li>
-                    <li><a href="/collections" class="nav-cta-dark">Shop Now</a></li>
+                    <li><a href="/collections/" class="nav-cta-vibrant">Shop Now</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-<div class="collection-hero-modern">
+<div class="collection-header-vibrant">
     <div class="container">
-        <div class="collection-hero-content">
-
-            <div class="collection-breadcrumb">
-                <a href="/">Home</a>
-                <span>/</span>
-                <a href="#collections">Collections</a>
-                <span>/</span>
-                <span class="current">
-                    Cute Animal Characters Tote Bags                </span>
-            </div>
-
+        <div class="collection-header-content">
+            <span class="collection-category-tag">? Collection</span>
             <h1>Cute Animal Characters Tote Bags</h1>
-
-            <p>Welcome to our exclusive Cute Animal Characters Tote Bags collection at Cute Animal Characters. Discover the perfect cute, animal, characters, tote for your home and lifestyle.</p>
-            <div class="collection-meta">
-                <span class="product-count-badge">
-                    12 Products
-                </span>
+            <p>Discover unique Cute Animal Characters Tote Bags at Cute Animal Characters. Shop now and experience the difference in quality and design.</p>            <div class="collection-stats-vibrant">
+                <div class="stat-item-vibrant">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Products</span>
+                </div>
+                <div class="stat-item-vibrant">
+                    <span class="stat-number">? 4.9</span>
+                    <span class="stat-label">Rating</span>
+                </div>
+                <div class="stat-item-vibrant">
+                    <span class="stat-number">?</span>
+                    <span class="stat-label">Free Shipping</span>
+                </div>
             </div>
-
         </div>
     </div>
 </div>
 
-<div class="collection-products-modern">
+<div class="collection-products-vibrant">
     <div class="container">
-
-        <div class="collection-toolbar">
-            <div class="toolbar-left">
-                <span class="results-count">
-                    Showing 12 products
-                </span>
-            </div>
-
-            <div class="toolbar-right">
-                <select class="sort-select">
-                    <option>Sort by: Featured</option>
-                    <option>Price: Low to High</option>
-                    <option>Price: High to Low</option>
-                    <option>Newest</option>
-                </select>
-
-                <div class="view-options">
-                    <button class="view-grid active">⊞</button>
-                    <button class="view-list">≡</button>
-                </div>
-            </div>
-        </div>
-
         <div class="grid">
                     <div class="product-card">
-            <a href="https://www.zazzle.com/cute_chameleon_baseball_cap_gingham_tote_bag-256491949845731843" target="_blank" rel="noopener noreferrer">
-                <img src="https://rlv.zcache.com/cute_chameleon_baseball_cap_gingham_tote_bag-r6e2bb9c8a9c1401f846273b663ea4667_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Cute Chameleon Baseball Cap Gingham Tote" class="product-image" loading="lazy">
+            <a href="https://www.zazzle.com/emu_flower_crown_tote_bag-256884364811062091" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/emu_flower_crown_tote_bag-r7bbaab3c0f4d489bb1263ceaec306016_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Emu Flower Crown Tote Bag" class="product-image" loading="lazy">
                 <div class="product-info">
-                    <h3 class="product-title">Cute Chameleon Baseball Cap Gingham Tote</h3>
+                    <h3 class="product-title">Emu Flower Crown Tote Bag</h3>
                     <p class="product-price">$12.38</p>
                     <button class="buy-btn">View Product</button>
                 </div>
             </a>
         </div>
                 <div class="product-card">
-            <a href="https://www.zazzle.com/giraffe_wearing_cowboy_hat_tote_bag-256688152765709412" target="_blank" rel="noopener noreferrer">
-                <img src="https://rlv.zcache.com/giraffe_wearing_cowboy_hat_tote_bag-r8b70b6e5d5f247019417548196fc3d09_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Giraffe Wearing Cowboy Hat Tote" class="product-image" loading="lazy">
+            <a href="https://www.zazzle.com/cowboy_jellyfish_tote_bag-256792711395363979" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/cowboy_jellyfish_tote_bag-r802f1b95b5dc4936bd7c8d61aa81dbda_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Cowboy Jellyfish Tote Bag" class="product-image" loading="lazy">
                 <div class="product-info">
-                    <h3 class="product-title">Giraffe Wearing Cowboy Hat Tote</h3>
+                    <h3 class="product-title">Cowboy Jellyfish Tote Bag</h3>
                     <p class="product-price">$12.38</p>
                     <button class="buy-btn">View Product</button>
                 </div>
             </a>
         </div>
                 <div class="product-card">
-            <a href="https://www.zazzle.com/cute_stork_floral_tote_bag-256241338398604916" target="_blank" rel="noopener noreferrer">
-                <img src="https://rlv.zcache.com/cute_stork_floral_tote_bag-rc6ba2923d1604324929377a10dfd2287_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Cute Stork Floral Tote" class="product-image" loading="lazy">
+            <a href="https://www.zazzle.com/cute_bee_gingham_tote_bags-256812399875322312" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/cute_bee_gingham_tote_bags-rc0ae95e65fe544e09f4a9e508ef7f2c0_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Cute Bee Gingham Tote Bags" class="product-image" loading="lazy">
                 <div class="product-info">
-                    <h3 class="product-title">Cute Stork Floral Tote</h3>
+                    <h3 class="product-title">Cute Bee Gingham Tote Bags</h3>
                     <p class="product-price">$12.38</p>
                     <button class="buy-btn">View Product</button>
                 </div>
             </a>
         </div>
                 <div class="product-card">
-            <a href="https://www.zazzle.com/kingfisher_party_hat_tropical_tote_bag-256127845470761768" target="_blank" rel="noopener noreferrer">
-                <img src="https://rlv.zcache.com/kingfisher_party_hat_tropical_tote_bag-r4d66dbd82cee49019ea65ff7d0eac929_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Kingfisher Party Hat Tropical Tote" class="product-image" loading="lazy">
+            <a href="https://www.zazzle.com/bat_boater_hat_giraffe_tote_bag-256654872899364212" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/bat_boater_hat_giraffe_tote_bag-r7b03d759015b47ebb581a775eb192fee_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Bat Boater Hat Giraffe Tote Bag" class="product-image" loading="lazy">
                 <div class="product-info">
-                    <h3 class="product-title">Kingfisher Party Hat Tropical Tote</h3>
+                    <h3 class="product-title">Bat Boater Hat Giraffe Tote Bag</h3>
                     <p class="product-price">$12.38</p>
                     <button class="buy-btn">View Product</button>
                 </div>
             </a>
         </div>
                 <div class="product-card">
-            <a href="https://www.zazzle.com/santa_hat_crab_tote_bag-256850690556738202" target="_blank" rel="noopener noreferrer">
-                <img src="https://rlv.zcache.com/santa_hat_crab_tote_bag-r4fe706cc92ce48eeb85130407834a845_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Santa Hat Crab Tote" class="product-image" loading="lazy">
+            <a href="https://www.zazzle.com/turtle_tote_bag_vintage_floral-256154056889559133" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/turtle_tote_bag_vintage_floral-r05e6d1334a5f43168957d9fdaa473958_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Turtle Tote Bag Vintage Floral" class="product-image" loading="lazy">
                 <div class="product-info">
-                    <h3 class="product-title">Santa Hat Crab Tote</h3>
+                    <h3 class="product-title">Turtle Tote Bag Vintage Floral</h3>
                     <p class="product-price">$12.38</p>
                     <button class="buy-btn">View Product</button>
                 </div>
             </a>
         </div>
                 <div class="product-card">
-            <a href="https://www.zazzle.com/parrot_fedora_houndstooth_tote_bag-256670262190586412" target="_blank" rel="noopener noreferrer">
-                <img src="https://rlv.zcache.com/parrot_fedora_houndstooth_tote_bag-rf864c8c2978444fa8a5688b31927fee1_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Parrot Fedora Houndstooth Tote" class="product-image" loading="lazy">
+            <a href="https://www.zazzle.com/macaw_tote_bag-256446773569538219" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/macaw_tote_bag-r575b28258abe4540b021f2ca2a77791b_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Macaw Tote Bag" class="product-image" loading="lazy">
                 <div class="product-info">
-                    <h3 class="product-title">Parrot Fedora Houndstooth Tote</h3>
+                    <h3 class="product-title">Macaw Tote Bag</h3>
                     <p class="product-price">$12.38</p>
                     <button class="buy-btn">View Product</button>
                 </div>
             </a>
         </div>
                 <div class="product-card">
-            <a href="https://www.zazzle.com/folk_art_rhino_brown_bowler_hat_tote_bag-256294809794473497" target="_blank" rel="noopener noreferrer">
-                <img src="https://rlv.zcache.com/folk_art_rhino_brown_bowler_hat_tote_bag-rb5ae02dd3b9243a0bcc0c9b7aa77f52d_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Folk Art Rhino Brown Bowler Hat Tote" class="product-image" loading="lazy">
+            <a href="https://www.zazzle.com/robin_cowboy_tote_bag-256332533866763148" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/robin_cowboy_tote_bag-rb6b407dc58f84d25be71cb71802d1645_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Robin Cowboy Tote Bag" class="product-image" loading="lazy">
                 <div class="product-info">
-                    <h3 class="product-title">Folk Art Rhino Brown Bowler Hat Tote</h3>
+                    <h3 class="product-title">Robin Cowboy Tote Bag</h3>
                     <p class="product-price">$12.38</p>
                     <button class="buy-btn">View Product</button>
                 </div>
             </a>
         </div>
                 <div class="product-card">
-            <a href="https://www.zazzle.com/ferret_in_black_top_hat_tote_bag-256479554729189951" target="_blank" rel="noopener noreferrer">
-                <img src="https://rlv.zcache.com/ferret_in_black_top_hat_tote_bag-rfda3c60a416e4887a24de4297b048ae5_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Ferret in Black Top Hat Tote" class="product-image" loading="lazy">
+            <a href="https://www.zazzle.com/cute_puffin_sailor_hat_graphic_tote_bag-256701028597521977" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/cute_puffin_sailor_hat_graphic_tote_bag-r76b2cb75cf53445795d2d74ae4257ebe_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Cute Puffin Sailor Hat Graphic Tote Bag" class="product-image" loading="lazy">
                 <div class="product-info">
-                    <h3 class="product-title">Ferret in Black Top Hat Tote</h3>
+                    <h3 class="product-title">Cute Puffin Sailor Hat Graphic Tote Bag</h3>
                     <p class="product-price">$12.38</p>
                     <button class="buy-btn">View Product</button>
                 </div>
             </a>
         </div>
                 <div class="product-card">
-            <a href="https://www.zazzle.com/quail_in_beret_zebra_stripe_tote_bag-256376980697649823" target="_blank" rel="noopener noreferrer">
-                <img src="https://rlv.zcache.com/quail_in_beret_zebra_stripe_tote_bag-rffd35ae8448a4ad2845c38feb0b59252_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Quail in Beret Zebra Stripe Tote" class="product-image" loading="lazy">
+            <a href="https://www.zazzle.com/teal_sheep_tote_bag_wizard-256068420536935346" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/teal_sheep_tote_bag_wizard-r9473fc4751f342d3aa44502c8aacd7f3_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Teal Sheep Tote Bag Wizard" class="product-image" loading="lazy">
                 <div class="product-info">
-                    <h3 class="product-title">Quail in Beret Zebra Stripe Tote</h3>
+                    <h3 class="product-title">Teal Sheep Tote Bag Wizard</h3>
                     <p class="product-price">$12.38</p>
                     <button class="buy-btn">View Product</button>
                 </div>
             </a>
         </div>
                 <div class="product-card">
-            <a href="https://www.zazzle.com/colorful_party_hat_tapir_tote_bag-256115002795664842" target="_blank" rel="noopener noreferrer">
-                <img src="https://rlv.zcache.com/colorful_party_hat_tapir_tote_bag-r3c153bfcdc3d447e9ee99fd87d4f34bb_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Colorful Party Hat Tapir Tote" class="product-image" loading="lazy">
+            <a href="https://www.zazzle.com/cute_pink_hummingbird_tote_bag-256140812115981603" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/cute_pink_hummingbird_tote_bag-radf7304bb3684fe287d55518b410b960_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Cute Pink Hummingbird Tote Bag" class="product-image" loading="lazy">
                 <div class="product-info">
-                    <h3 class="product-title">Colorful Party Hat Tapir Tote</h3>
+                    <h3 class="product-title">Cute Pink Hummingbird Tote Bag</h3>
                     <p class="product-price">$12.38</p>
                     <button class="buy-btn">View Product</button>
                 </div>
             </a>
         </div>
                 <div class="product-card">
-            <a href="https://www.zazzle.com/platypus_santa_tote_bag-256560823683665991" target="_blank" rel="noopener noreferrer">
-                <img src="https://rlv.zcache.com/platypus_santa_tote_bag-r3a8b677e4a82417ca593e01af480bdbc_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Platypus Santa Tote" class="product-image" loading="lazy">
+            <a href="https://www.zazzle.com/giraffe_houndstooth_tote_bags-256788354438878084" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/giraffe_houndstooth_tote_bags-r59cfe60c174c45cf92f0342690b3be99_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Giraffe Houndstooth Tote Bags" class="product-image" loading="lazy">
                 <div class="product-info">
-                    <h3 class="product-title">Platypus Santa Tote</h3>
+                    <h3 class="product-title">Giraffe Houndstooth Tote Bags</h3>
                     <p class="product-price">$12.38</p>
                     <button class="buy-btn">View Product</button>
                 </div>
             </a>
         </div>
                 <div class="product-card">
-            <a href="https://www.zazzle.com/cute_woodpecker_chef_tote_bag-256408963276568164" target="_blank" rel="noopener noreferrer">
-                <img src="https://rlv.zcache.com/cute_woodpecker_chef_tote_bag-r6c211563764f410ea24cdeb31b23bca9_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Cute Woodpecker Chef Tote" class="product-image" loading="lazy">
+            <a href="https://www.zazzle.com/swan_sun_hat_tote_bag_art-256684351172732807" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/swan_sun_hat_tote_bag_art-rf1864cde75744c9185b740e834a485d9_v9w6h_8byvr_1024.jpg?max_dim=220" alt="Swan Sun Hat Tote Bag Art" class="product-image" loading="lazy">
                 <div class="product-info">
-                    <h3 class="product-title">Cute Woodpecker Chef Tote</h3>
+                    <h3 class="product-title">Swan Sun Hat Tote Bag Art</h3>
                     <p class="product-price">$12.38</p>
                     <button class="buy-btn">View Product</button>
                 </div>
             </a>
         </div>
                 </div>
-
-        <div class="pagination"><a href="/collections/cute-animal-characters-tote-bags/">‹ Previous</a><a href="/collections/cute-animal-characters-tote-bags/">1</a><span class="active">2</span><a href="/collections/cute-animal-characters-tote-bags/page-3.html">3</a><a href="/collections/cute-animal-characters-tote-bags/page-3.html">Next ›</a></div>
-    </div>
+        <div class="pagination"><a href="/collections/cute-animal-characters-tote-bags/">‹ Previous</a><a href="/collections/cute-animal-characters-tote-bags/">1</a><span class="active">2</span><a href="/collections/cute-animal-characters-tote-bags/page-3.html">3</a><a href="/collections/cute-animal-characters-tote-bags/page-4.html">4</a><span>...</span><a href="/collections/cute-animal-characters-tote-bags/page-21.html">21</a><a href="/collections/cute-animal-characters-tote-bags/page-3.html">Next ›</a></div>    </div>
 </div>
 
 <style>
-    .collection-hero-modern {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    .collection-header-vibrant {
+        background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 50%, #feca57 100%);
         color: white;
-        padding: 60px 0 40px;
-        margin-bottom: 40px;
+        padding: 80px 0 60px;
+        position: relative;
+        overflow: hidden;
     }
-
-    .collection-breadcrumb {
-        font-size: 14px;
-        opacity: 0.8;
-        margin-bottom: 15px;
+    .collection-header-vibrant::before {
+        content: '?';
+        position: absolute;
+        font-size: 400px;
+        right: -80px;
+        top: -150px;
+        opacity: 0.05;
+        transform: rotate(20deg);
     }
-
-    .collection-breadcrumb a {
-        color: white;
-        text-decoration: none;
-        transition: opacity 0.3s ease;
+    .collection-header-content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
     }
-
-    .collection-breadcrumb a:hover {
-        opacity: 0.7;
+    .collection-category-tag {
+        display: inline-block;
+        background: rgba(255,255,255,0.2);
+        padding: 6px 20px;
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        backdrop-filter: blur(10px);
     }
-
-    .collection-breadcrumb span {
-        margin: 0 8px;
-    }
-
-    .collection-breadcrumb .current {
-        opacity: 0.6;
-    }
-
-    .collection-hero-content h1 {
-        font-size: 40px;
+    .collection-header-content h1 {
+        font-size: 44px;
+        font-weight: 800;
         margin: 0 0 15px;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
     }
-
-    .collection-hero-content p {
+    .collection-header-content p {
         font-size: 18px;
         opacity: 0.9;
         max-width: 600px;
+        margin: 0 auto 30px;
         line-height: 1.6;
     }
-
-    .collection-meta {
-        margin-top: 20px;
-    }
-
-    .product-count-badge {
-        display: inline-block;
-        background: rgba(255,255,255,0.2);
-        padding: 6px 18px;
-        border-radius: 50px;
-        font-size: 14px;
-        backdrop-filter: blur(10px);
-    }
-
-    .collection-products-modern {
-        padding-bottom: 60px;
-    }
-
-    .collection-toolbar {
+    .collection-stats-vibrant {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 40px;
+    }
+    .stat-item-vibrant {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        margin-bottom: 30px;
-        padding: 15px 0;
-        border-bottom: 1px solid #e9ecef;
-        flex-wrap: wrap;
-        gap: 15px;
     }
-
-    .toolbar-left {
-        display: flex;
-        align-items: center;
-        gap: 15px;
+    .stat-number {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
     }
-
-    .results-count {
-        font-size: 14px;
-        color: #666;
+    .stat-label {
+        font-size: 13px;
+        opacity: 0.8;
+        margin-top: 3px;
     }
-
-    .toolbar-right {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .sort-select {
-        padding: 8px 15px;
-        border: 1px solid #e9ecef;
-        border-radius: 6px;
-        background: white;
-        font-size: 14px;
-        color: #333;
-        cursor: pointer;
-    }
-
-    .sort-select:focus {
-        outline: none;
-        border-color: #667eea;
-    }
-
-    .view-options {
-        display: flex;
-        gap: 5px;
-    }
-
-    .view-options button {
-        padding: 6px 10px;
-        border: 1px solid #e9ecef;
-        background: white;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 16px;
-        transition: all 0.3s ease;
-        color: #999;
-    }
-
-    .view-options button.active {
-        background: #667eea;
-        border-color: #667eea;
-        color: white;
-    }
-
-    .view-options button:hover:not(.active) {
+    .collection-products-vibrant {
+        padding: 60px 0;
         background: #f8f9fa;
     }
-
     @media (max-width: 768px) {
-        .collection-hero-content h1 {
-            font-size: 28px;
+        .collection-header-content h1 {
+            font-size: 30px;
         }
-
-        .collection-toolbar {
-            flex-direction: column;
-            align-items: stretch;
-        }
-
-        .toolbar-right {
+        .collection-stats-vibrant {
+            gap: 20px;
             flex-wrap: wrap;
         }
-
-        .sort-select {
-            flex: 1;
-        }
     }
-</style>            </main>
-            <footer class="footer-minimal-dark">
+</style>
+            </main>
+            <footer class="footer-elegant">
                 <div class="container">
-                    <div class="footer-grid-minimal">
-                        <div class="footer-col-minimal">
-                            <h3 class="footer-logo-minimal">✦ ZazzleShop</h3>
-                            <p class="footer-desc-minimal">Discover unique products from independent creators around the world.</p>
-                            <div class="footer-social-minimal">
-                                <a href="#" aria-label="Facebook">📘</a>
-                                <a href="#" aria-label="Instagram">📸</a>
-                                <a href="#" aria-label="Twitter">🐦</a>
-                                <a href="#" aria-label="Pinterest">📌</a>
-                            </div>
+                    <div class="footer-divider-elegant">
+                        <span>✦</span>
+                    </div>
+                    <div class="footer-grid-elegant">
+                        <div class="footer-col-elegant">
+                            <h3 class="footer-logo-elegant">Tommy Design</h3>
+                            <p class="footer-desc-elegant">Curating exceptional designs for discerning individuals since 2020.</p>
+                            <address class="footer-address-elegant">
+                                123 Creative Lane<br>
+                                Design District, NY 10001<br>
+                                United States
+                            </address>
                         </div>
-                        <div class="footer-col-minimal">
-                            <h4>Quick Links</h4>
+                        <div class="footer-col-elegant">
+                            <h4>Discover</h4>
                             <ul>
                                 <li><a href="/">Home</a></li>
-                                <li><a href="#collections">Collections</a></li>
-                                <li><a href="#about">About Us</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="/collections/">Collections</a></li>
+                                <li><a href="#about">Our Story</a></li>
+                                <li><a href="#">Lookbook</a></li>
                             </ul>
                         </div>
-                        <div class="footer-col-minimal">
-                            <h4>Support</h4>
+                        <div class="footer-col-elegant">
+                            <h4>Service</h4>
                             <ul>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Shipping Policy</a></li>
-                                <li><a href="#">Returns</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Shipping Info</a></li>
+                                <li><a href="#">Returns & Exchanges</a></li>
+                                <li><a href="#">Gift Cards</a></li>
+                                <li><a href="#">Bulk Orders</a></li>
                             </ul>
                         </div>
-                        <div class="footer-col-minimal">
-                            <h4>Newsletter</h4>
-                            <p class="footer-newsletter-text">Subscribe for exclusive deals and updates.</p>
-                            <form class="footer-newsletter-form">
-                                <input type="email" placeholder="Your email" required>
-                                <button type="submit">Subscribe</button>
-                            </form>
+                        <div class="footer-col-elegant">
+                            <h4>Connect</h4>
+                            <div class="footer-social-elegant">
+                                <a href="#" class="social-elegant">Facebook</a>
+                                <a href="#" class="social-elegant">Instagram</a>
+                                <a href="#" class="social-elegant">Pinterest</a>
+                                <a href="#" class="social-elegant">Twitter</a>
+                            </div>
+                            <div class="footer-newsletter-elegant">
+                                <p>Subscribe for inspirations</p>
+                                <form>
+                                    <input type="email" placeholder="Enter email" required>
+                                    <button type="submit">→</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                    <div class="footer-bottom-minimal">
-                        <p>&copy; 2026 ZazzleShop. All rights reserved.</p>
-                        <div class="footer-payments-minimal">
-                            <span>💳</span>
-                            <span>🔒</span>
-                            <span>✓</span>
+                    <div class="footer-bottom-elegant">
+                        <p>&copy; 2026 Tommy Design. All rights reserved.</p>
+                        <div class="footer-legal-elegant">
+                            <a href="#">Privacy</a>
+                            <a href="#">Terms</a>
+                            <a href="#">Cookies</a>
                         </div>
                     </div>
                 </div>
@@ -540,134 +459,190 @@
         </body>
         </html>
         <style>
-            .footer-minimal-dark {
+            .footer-elegant {
                 background: #1a1a2e;
                 color: rgba(255,255,255,0.8);
                 padding: 60px 0 30px;
                 margin-top: 60px;
+                font-family: 'Roboto', sans-serif;
             }
-            .footer-grid-minimal {
+            .footer-divider-elegant {
+                text-align: center;
+                color: #c9a86c;
+                font-size: 24px;
+                margin-bottom: 40px;
+                position: relative;
+            }
+            .footer-divider-elegant::before,
+            .footer-divider-elegant::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                width: 45%;
+                height: 1px;
+                background: rgba(255,255,255,0.05);
+            }
+            .footer-divider-elegant::before {
+                left: 0;
+            }
+            .footer-divider-elegant::after {
+                right: 0;
+            }
+            .footer-grid-elegant {
                 display: grid;
                 grid-template-columns: 2fr 1fr 1fr 1.5fr;
-                gap: 40px;
+                gap: 50px;
                 margin-bottom: 40px;
             }
-            .footer-logo-minimal {
-                font-size: 24px;
+            .footer-logo-elegant {
+                font-family: 'Playfair Display', serif;
+                font-size: 28px;
                 font-weight: 700;
                 color: white;
-                margin-bottom: 15px;
-                font-family: 'Inter', sans-serif;
+                margin: 0 0 15px;
             }
-            .footer-desc-minimal {
+            .footer-logo-elegant span {
+                color: #c9a86c;
+                font-weight: 400;
+            }
+            .footer-desc-elegant {
                 font-size: 14px;
-                line-height: 1.6;
-                margin-bottom: 20px;
+                line-height: 1.8;
                 opacity: 0.7;
-            }
-            .footer-social-minimal {
-                display: flex;
-                gap: 15px;
-            }
-            .footer-social-minimal a {
-                color: rgba(255,255,255,0.6);
-                text-decoration: none;
-                font-size: 20px;
-                transition: all 0.3s ease;
-            }
-            .footer-social-minimal a:hover {
-                color: #6c63ff;
-                transform: translateY(-3px);
-            }
-            .footer-col-minimal h4 {
-                color: white;
-                font-size: 16px;
-                font-weight: 600;
                 margin-bottom: 20px;
-                font-family: 'Inter', sans-serif;
+                font-weight: 300;
             }
-            .footer-col-minimal ul {
+            .footer-address-elegant {
+                font-style: normal;
+                font-size: 13px;
+                line-height: 1.8;
+                opacity: 0.6;
+                font-weight: 300;
+            }
+            .footer-col-elegant h4 {
+                color: white;
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                font-family: 'Roboto', sans-serif;
+            }
+            .footer-col-elegant ul {
                 list-style: none;
                 padding: 0;
                 margin: 0;
             }
-            .footer-col-minimal ul li {
-                margin-bottom: 10px;
+            .footer-col-elegant ul li {
+                margin-bottom: 12px;
             }
-            .footer-col-minimal ul a {
-                color: rgba(255,255,255,0.7);
+            .footer-col-elegant ul a {
+                color: rgba(255,255,255,0.6);
                 text-decoration: none;
                 font-size: 14px;
-                transition: color 0.3s ease;
+                font-weight: 300;
+                transition: all 0.3s ease;
+                letter-spacing: 0.5px;
             }
-            .footer-col-minimal ul a:hover {
-                color: #6c63ff;
+            .footer-col-elegant ul a:hover {
+                color: #c9a86c;
+                padding-left: 5px;
             }
-            .footer-newsletter-text {
-                font-size: 14px;
-                opacity: 0.7;
-                margin-bottom: 15px;
-            }
-            .footer-newsletter-form {
+            .footer-social-elegant {
                 display: flex;
+                flex-direction: column;
                 gap: 10px;
+                margin-bottom: 25px;
             }
-            .footer-newsletter-form input {
+            .social-elegant {
+                color: rgba(255,255,255,0.6);
+                text-decoration: none;
+                font-size: 13px;
+                font-weight: 300;
+                transition: all 0.3s ease;
+                letter-spacing: 1px;
+            }
+            .social-elegant:hover {
+                color: #c9a86c;
+                padding-left: 5px;
+            }
+            .footer-newsletter-elegant p {
+                font-size: 13px;
+                margin: 0 0 10px;
+                opacity: 0.7;
+                font-weight: 300;
+            }
+            .footer-newsletter-elegant form {
+                display: flex;
+                gap: 5px;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+            .footer-newsletter-elegant input {
                 flex: 1;
-                padding: 10px 15px;
-                border: 1px solid rgba(255,255,255,0.1);
-                border-radius: 4px;
-                background: rgba(255,255,255,0.05);
+                background: none;
+                border: none;
+                padding: 10px 0;
                 color: white;
-                font-size: 14px;
+                font-size: 13px;
             }
-            .footer-newsletter-form input::placeholder {
+            .footer-newsletter-elegant input::placeholder {
                 color: rgba(255,255,255,0.3);
             }
-            .footer-newsletter-form input:focus {
+            .footer-newsletter-elegant input:focus {
                 outline: none;
-                border-color: #6c63ff;
             }
-            .footer-newsletter-form button {
-                padding: 10px 20px;
-                background: #6c63ff;
-                color: white;
+            .footer-newsletter-elegant button {
+                background: none;
                 border: none;
-                border-radius: 4px;
-                font-weight: 600;
+                color: #c9a86c;
+                font-size: 20px;
                 cursor: pointer;
-                transition: background 0.3s ease;
-                white-space: nowrap;
+                padding: 5px 10px;
+                transition: all 0.3s ease;
             }
-            .footer-newsletter-form button:hover {
-                background: #5a52d5;
+            .footer-newsletter-elegant button:hover {
+                transform: translateX(5px);
             }
-            .footer-bottom-minimal {
+            .footer-bottom-elegant {
                 border-top: 1px solid rgba(255,255,255,0.05);
                 padding-top: 30px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                font-size: 13px;
-                opacity: 0.6;
+                font-size: 12px;
+                opacity: 0.5;
+                font-weight: 300;
+                letter-spacing: 1px;
             }
-            .footer-payments-minimal {
+            .footer-legal-elegant {
                 display: flex;
-                gap: 15px;
-                font-size: 24px;
+                gap: 30px;
+            }
+            .footer-legal-elegant a {
+                color: rgba(255,255,255,0.5);
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+            .footer-legal-elegant a:hover {
+                color: #c9a86c;
             }
             @media (max-width: 768px) {
-                .footer-grid-minimal {
+                .footer-grid-elegant {
                     grid-template-columns: 1fr;
                     gap: 30px;
                 }
-                .footer-newsletter-form {
-                    flex-direction: column;
+                .footer-divider-elegant::before,
+                .footer-divider-elegant::after {
+                    width: 30%;
                 }
-                .footer-bottom-minimal {
+                .footer-bottom-elegant {
                     flex-direction: column;
                     gap: 15px;
                     text-align: center;
+                }
+                .footer-legal-elegant {
+                    flex-wrap: wrap;
+                    justify-content: center;
                 }
             }
         </style>
