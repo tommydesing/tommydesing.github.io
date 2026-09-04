@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Folk Blankets at Folk</title>
+    <meta name="description" content="Find amazing Folk Blankets at Folk. Featuring the latest folk, blankets trends and styles.">
+    <link rel="stylesheet" href="/assets/css/utilities.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .header-dark {
+            background: #0a0a0a;
+            padding: 20px 0;
+            border-bottom: 1px solid #1a1a1a;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-dark {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-dark {
+            font-family: 'Poppins', sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .nav-links-dark {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+        .nav-links-dark a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            padding: 5px 0;
+            position: relative;
+        }
+        .nav-links-dark a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+            transition: width 0.3s ease;
+        }
+        .nav-links-dark a:hover {
+            color: white;
+        }
+        .nav-links-dark a:hover::before {
+            width: 100%;
+        }
+        .nav-cta-dark {
+            background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+            color: white !important;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600 !important;
+            transition: all 0.3s ease !important;
+        }
+        .nav-cta-dark::before {
+            display: none !important;
+        }
+        .nav-cta-dark:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 210, 255, 0.3);
+            color: white !important;
+        }
+        .nav-search-dark {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 8px 15px;
+            border-radius: 50px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            width: 200px;
+            transition: all 0.3s ease;
+        }
+        .nav-search-dark:focus {
+            outline: none;
+            border-color: #00d2ff;
+            background: rgba(255,255,255,0.1);
+        }
+        .nav-search-dark::placeholder {
+            color: rgba(255,255,255,0.3);
+        }
+        .mobile-toggle-dark {
+            display: none;
+            background: none;
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 8px 12px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        @media (max-width: 768px) {
+            .mobile-toggle-dark {
+                display: block;
+            }
+            .nav-links-dark {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 80px;
+                left: 20px;
+                right: 20px;
+                background: #0a0a0a;
+                padding: 25px;
+                border-radius: 12px;
+                border: 1px solid #1a1a1a;
+                gap: 15px;
+            }
+            .nav-links-dark.active {
+                display: flex;
+            }
+            .nav-search-dark {
+                width: 100%;
+            }
+            .nav-cta-dark {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header-dark">
+        <div class="container">
+            <nav class="nav-dark">
+                <a href="/" class="logo-dark">✦ ZazzleShop</a>
+                <button class="mobile-toggle-dark" onclick="this.nextElementSibling.classList.toggle('active')">☰</button>
+                <ul class="nav-links-dark">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><input type="text" class="nav-search-dark" placeholder="Search products..."></li>
+                    <li><a href="/collections" class="nav-cta-dark">Shop Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+<div class="collection-hero-modern">
+    <div class="container">
+        <div class="collection-hero-content">
+
+            <div class="collection-breadcrumb">
+                <a href="/">Home</a>
+                <span>/</span>
+                <a href="#collections">Collections</a>
+                <span>/</span>
+                <span class="current">
+                    Folk Blankets                </span>
+            </div>
+
+            <h1>Folk Blankets</h1>
+
+            <p>Welcome to our exclusive Folk Blankets collection at Folk. Discover the perfect folk, blankets for your home and lifestyle.</p>
+            <div class="collection-meta">
+                <span class="product-count-badge">
+                    12 Products
+                </span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="collection-products-modern">
+    <div class="container">
+
+        <div class="collection-toolbar">
+            <div class="toolbar-left">
+                <span class="results-count">
+                    Showing 12 products
+                </span>
+            </div>
+
+            <div class="toolbar-right">
+                <select class="sort-select">
+                    <option>Sort by: Featured</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Newest</option>
+                </select>
+
+                <div class="view-options">
+                    <button class="view-grid active">⊞</button>
+                    <button class="view-list">≡</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+                    <div class="product-card">
+            <a href="https://www.zazzle.com/red_panda_throw_blankets_cozy_floral_design-256745039013773708" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/red_panda_throw_blankets_cozy_floral_design-r2ddd5c26e85e4a049896d5b78ff42568_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Red Panda Throw Blankets – Cozy Floral Design" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Red Panda Throw Blankets – Cozy Floral Design</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/eurasian_lynx_throw_blanket_snow_fir_pattern-256950852617393546" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/eurasian_lynx_throw_blanket_snow_fir_pattern-r654ac9b4b3e94a258d33f14b276c07aa_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Eurasian Lynx Throw Blanket – Snow Fir Pattern" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Eurasian Lynx Throw Blanket – Snow Fir Pattern</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/river_otter_throw_blankets_willow_pattern-256860282752542092" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/river_otter_throw_blankets_willow_pattern-r41a77a15708c4b4e900832fc2daf3c54_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="River Otter Throw Blankets – Willow Pattern" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">River Otter Throw Blankets – Willow Pattern</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/raccoon_moonlit_cornfield_throw_blanket-256158252646661380" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/raccoon_moonlit_cornfield_throw_blanket-rfabb3df8b65347d48c49a3ba478b8f5c_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Raccoon Moonlit Cornfield Throw Blanket" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Raccoon Moonlit Cornfield Throw Blanket</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/chipmunk_woodland_berry_throw_blanket-256651023428427074" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/chipmunk_woodland_berry_throw_blanket-rdc093c903a1d4339b5949c89c56c904b_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Chipmunk Woodland Berry Throw Blanket" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Chipmunk Woodland Berry Throw Blanket</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/velvet_mole_throw_blankets_centered_motif-256914488767437421" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/velvet_mole_throw_blankets_centered_motif-r3cd20868d4274d109ceb88d3f6d08acf_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Velvet Mole Throw Blankets – Centered Motif" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Velvet Mole Throw Blankets – Centered Motif</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/industrious_beaver_throw_blanket-256717310437616363" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/industrious_beaver_throw_blanket-r14a5357151194339a6ab9bb4b5851887_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Industrious Beaver Throw Blanket" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Industrious Beaver Throw Blanket</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/wild_boar_oak_forest_throw_blanket-256099699027901803" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/wild_boar_oak_forest_throw_blanket-r174b595765c145efbb2ccb17627997c4_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Wild Boar Oak Forest Throw Blanket" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Wild Boar Oak Forest Throw Blanket</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/alpine_goat_throw_blankets_cozy_mountain_design-256348698614972478" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/alpine_goat_throw_blankets_cozy_mountain_design-r01d3b51ad1b349b586fa9ac52a446804_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Alpine Goat Throw Blankets – Cozy Mountain Design" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Alpine Goat Throw Blankets – Cozy Mountain Design</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/agile_chamois_throw_blanket_highland_meadow-256522339128383489" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/agile_chamois_throw_blanket_highland_meadow-r17ee1fabac2c412a8a22800700d512b0_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Agile Chamois Throw Blanket – Highland Meadow" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Agile Chamois Throw Blanket – Highland Meadow</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/wolverine_tundra_ridge_throw_blanket-256494543504982882" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/wolverine_tundra_ridge_throw_blanket-r8529da30024e46c59536a6c42f2bafec_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Wolverine Tundra Ridge Throw Blanket" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Wolverine Tundra Ridge Throw Blanket</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/opossum_throw_blanket_persimmon_orchard_pattern-256199748165825976" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/opossum_throw_blanket_persimmon_orchard_pattern-r80e3d5b32540441eb05c4381a215dcf5_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Opossum Throw Blanket – Persimmon Orchard Pattern" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Opossum Throw Blanket – Persimmon Orchard Pattern</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                </div>
+
+        <div class="pagination"><span class="active">1</span><a href="/collections/folk-blankets/page-2.html">2</a><a href="/collections/folk-blankets/page-3.html">3</a><span>...</span><a href="/collections/folk-blankets/page-22.html">22</a><a href="/collections/folk-blankets/page-2.html">Next ›</a></div>
+    </div>
+</div>
+
+<style>
+    .collection-hero-modern {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 60px 0 40px;
+        margin-bottom: 40px;
+    }
+
+    .collection-breadcrumb {
+        font-size: 14px;
+        opacity: 0.8;
+        margin-bottom: 15px;
+    }
+
+    .collection-breadcrumb a {
+        color: white;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .collection-breadcrumb a:hover {
+        opacity: 0.7;
+    }
+
+    .collection-breadcrumb span {
+        margin: 0 8px;
+    }
+
+    .collection-breadcrumb .current {
+        opacity: 0.6;
+    }
+
+    .collection-hero-content h1 {
+        font-size: 40px;
+        margin: 0 0 15px;
+    }
+
+    .collection-hero-content p {
+        font-size: 18px;
+        opacity: 0.9;
+        max-width: 600px;
+        line-height: 1.6;
+    }
+
+    .collection-meta {
+        margin-top: 20px;
+    }
+
+    .product-count-badge {
+        display: inline-block;
+        background: rgba(255,255,255,0.2);
+        padding: 6px 18px;
+        border-radius: 50px;
+        font-size: 14px;
+        backdrop-filter: blur(10px);
+    }
+
+    .collection-products-modern {
+        padding-bottom: 60px;
+    }
+
+    .collection-toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        padding: 15px 0;
+        border-bottom: 1px solid #e9ecef;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .toolbar-left {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .results-count {
+        font-size: 14px;
+        color: #666;
+    }
+
+    .toolbar-right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .sort-select {
+        padding: 8px 15px;
+        border: 1px solid #e9ecef;
+        border-radius: 6px;
+        background: white;
+        font-size: 14px;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .sort-select:focus {
+        outline: none;
+        border-color: #667eea;
+    }
+
+    .view-options {
+        display: flex;
+        gap: 5px;
+    }
+
+    .view-options button {
+        padding: 6px 10px;
+        border: 1px solid #e9ecef;
+        background: white;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        color: #999;
+    }
+
+    .view-options button.active {
+        background: #667eea;
+        border-color: #667eea;
+        color: white;
+    }
+
+    .view-options button:hover:not(.active) {
+        background: #f8f9fa;
+    }
+
+    @media (max-width: 768px) {
+        .collection-hero-content h1 {
+            font-size: 28px;
+        }
+
+        .collection-toolbar {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .toolbar-right {
+            flex-wrap: wrap;
+        }
+
+        .sort-select {
+            flex: 1;
+        }
+    }
+</style>            </main>
+            <footer class="footer-minimal-dark">
+                <div class="container">
+                    <div class="footer-grid-minimal">
+                        <div class="footer-col-minimal">
+                            <h3 class="footer-logo-minimal">✦ ZazzleShop</h3>
+                            <p class="footer-desc-minimal">Discover unique products from independent creators around the world.</p>
+                            <div class="footer-social-minimal">
+                                <a href="#" aria-label="Facebook">📘</a>
+                                <a href="#" aria-label="Instagram">📸</a>
+                                <a href="#" aria-label="Twitter">🐦</a>
+                                <a href="#" aria-label="Pinterest">📌</a>
+                            </div>
+                        </div>
+                        <div class="footer-col-minimal">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="#collections">Collections</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-minimal">
+                            <h4>Support</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Shipping Policy</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-minimal">
+                            <h4>Newsletter</h4>
+                            <p class="footer-newsletter-text">Subscribe for exclusive deals and updates.</p>
+                            <form class="footer-newsletter-form">
+                                <input type="email" placeholder="Your email" required>
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer-bottom-minimal">
+                        <p>&copy; 2026 ZazzleShop. All rights reserved.</p>
+                        <div class="footer-payments-minimal">
+                            <span>💳</span>
+                            <span>🔒</span>
+                            <span>✓</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </body>
+        </html>
+        <style>
+            .footer-minimal-dark {
+                background: #1a1a2e;
+                color: rgba(255,255,255,0.8);
+                padding: 60px 0 30px;
+                margin-top: 60px;
+            }
+            .footer-grid-minimal {
+                display: grid;
+                grid-template-columns: 2fr 1fr 1fr 1.5fr;
+                gap: 40px;
+                margin-bottom: 40px;
+            }
+            .footer-logo-minimal {
+                font-size: 24px;
+                font-weight: 700;
+                color: white;
+                margin-bottom: 15px;
+                font-family: 'Inter', sans-serif;
+            }
+            .footer-desc-minimal {
+                font-size: 14px;
+                line-height: 1.6;
+                margin-bottom: 20px;
+                opacity: 0.7;
+            }
+            .footer-social-minimal {
+                display: flex;
+                gap: 15px;
+            }
+            .footer-social-minimal a {
+                color: rgba(255,255,255,0.6);
+                text-decoration: none;
+                font-size: 20px;
+                transition: all 0.3s ease;
+            }
+            .footer-social-minimal a:hover {
+                color: #6c63ff;
+                transform: translateY(-3px);
+            }
+            .footer-col-minimal h4 {
+                color: white;
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 20px;
+                font-family: 'Inter', sans-serif;
+            }
+            .footer-col-minimal ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .footer-col-minimal ul li {
+                margin-bottom: 10px;
+            }
+            .footer-col-minimal ul a {
+                color: rgba(255,255,255,0.7);
+                text-decoration: none;
+                font-size: 14px;
+                transition: color 0.3s ease;
+            }
+            .footer-col-minimal ul a:hover {
+                color: #6c63ff;
+            }
+            .footer-newsletter-text {
+                font-size: 14px;
+                opacity: 0.7;
+                margin-bottom: 15px;
+            }
+            .footer-newsletter-form {
+                display: flex;
+                gap: 10px;
+            }
+            .footer-newsletter-form input {
+                flex: 1;
+                padding: 10px 15px;
+                border: 1px solid rgba(255,255,255,0.1);
+                border-radius: 4px;
+                background: rgba(255,255,255,0.05);
+                color: white;
+                font-size: 14px;
+            }
+            .footer-newsletter-form input::placeholder {
+                color: rgba(255,255,255,0.3);
+            }
+            .footer-newsletter-form input:focus {
+                outline: none;
+                border-color: #6c63ff;
+            }
+            .footer-newsletter-form button {
+                padding: 10px 20px;
+                background: #6c63ff;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background 0.3s ease;
+                white-space: nowrap;
+            }
+            .footer-newsletter-form button:hover {
+                background: #5a52d5;
+            }
+            .footer-bottom-minimal {
+                border-top: 1px solid rgba(255,255,255,0.05);
+                padding-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 13px;
+                opacity: 0.6;
+            }
+            .footer-payments-minimal {
+                display: flex;
+                gap: 15px;
+                font-size: 24px;
+            }
+            @media (max-width: 768px) {
+                .footer-grid-minimal {
+                    grid-template-columns: 1fr;
+                    gap: 30px;
+                }
+                .footer-newsletter-form {
+                    flex-direction: column;
+                }
+                .footer-bottom-minimal {
+                    flex-direction: column;
+                    gap: 15px;
+                    text-align: center;
+                }
+            }
+        </style>

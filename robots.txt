@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tommydesign.github.io/sitemap-index.xml

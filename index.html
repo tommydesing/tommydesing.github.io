@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zazzle Shop</title>
+    <meta name="description" content="Shop unique products at Zazzle Shop">
+    <link rel="stylesheet" href="/assets/css/utilities.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .header-dark {
+            background: #0a0a0a;
+            padding: 20px 0;
+            border-bottom: 1px solid #1a1a1a;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-dark {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-dark {
+            font-family: 'Poppins', sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .nav-links-dark {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+        .nav-links-dark a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            padding: 5px 0;
+            position: relative;
+        }
+        .nav-links-dark a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+            transition: width 0.3s ease;
+        }
+        .nav-links-dark a:hover {
+            color: white;
+        }
+        .nav-links-dark a:hover::before {
+            width: 100%;
+        }
+        .nav-cta-dark {
+            background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+            color: white !important;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600 !important;
+            transition: all 0.3s ease !important;
+        }
+        .nav-cta-dark::before {
+            display: none !important;
+        }
+        .nav-cta-dark:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 210, 255, 0.3);
+            color: white !important;
+        }
+        .nav-search-dark {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 8px 15px;
+            border-radius: 50px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            width: 200px;
+            transition: all 0.3s ease;
+        }
+        .nav-search-dark:focus {
+            outline: none;
+            border-color: #00d2ff;
+            background: rgba(255,255,255,0.1);
+        }
+        .nav-search-dark::placeholder {
+            color: rgba(255,255,255,0.3);
+        }
+        .mobile-toggle-dark {
+            display: none;
+            background: none;
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 8px 12px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        @media (max-width: 768px) {
+            .mobile-toggle-dark {
+                display: block;
+            }
+            .nav-links-dark {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 80px;
+                left: 20px;
+                right: 20px;
+                background: #0a0a0a;
+                padding: 25px;
+                border-radius: 12px;
+                border: 1px solid #1a1a1a;
+                gap: 15px;
+            }
+            .nav-links-dark.active {
+                display: flex;
+            }
+            .nav-search-dark {
+                width: 100%;
+            }
+            .nav-cta-dark {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header-dark">
+        <div class="container">
+            <nav class="nav-dark">
+                <a href="/" class="logo-dark">✦ ZazzleShop</a>
+                <button class="mobile-toggle-dark" onclick="this.nextElementSibling.classList.toggle('active')">☰</button>
+                <ul class="nav-links-dark">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><input type="text" class="nav-search-dark" placeholder="Search products..."></li>
+                    <li><a href="/collections" class="nav-cta-dark">Shop Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+<section class="hero-minimal">
+    <div class="container">
+        <div class="hero-content-minimal">
+            <h1>Curated Products <br>for Creative <span>Lives</span></h1>
+            <p>Discover unique designs from independent creators around the world.</p>
+            <a href="#collections" class="btn-minimal">Explore Collections →</a>
+        </div>
+    </div>
+</section>
+
+<section id="collections" class="collections-minimal">
+    <div class="container">
+        <h2>Collections</h2>
+        <div class="grid">
+                                                <div class="collection-card-minimal">
+                        <a href="/collections/animalartgiftsstudio-cushions/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Animalartgiftsstudio Cushions</h3>
+                                <p>Animalartgiftsstudio</p>
+                                <span class="product-count-minimal">300 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/animalartgiftsstudio-tees/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Animalartgiftsstudio Tees</h3>
+                                <p>Animalartgiftsstudio</p>
+                                <span class="product-count-minimal">52 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/animalartgiftsstudio-tees/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Animalartgiftsstudio Tees</h3>
+                                <p>Animalartgiftsstudio</p>
+                                <span class="product-count-minimal">41 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/animalartgiftsstudio-graphic-tees/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Animalartgiftsstudio Graphic Tees</h3>
+                                <p>Animalartgiftsstudio</p>
+                                <span class="product-count-minimal">4 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/animalartgiftsstudio-bags/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Animalartgiftsstudio Bags</h3>
+                                <p>Animalartgiftsstudio</p>
+                                <span class="product-count-minimal">96 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/animalartgiftsstudio-bags/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Animalartgiftsstudio Bags</h3>
+                                <p>Animalartgiftsstudio</p>
+                                <span class="product-count-minimal">2 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/animalartgiftsstudio-tote-bags/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Animalartgiftsstudio Tote Bags</h3>
+                                <p>Animalartgiftsstudio</p>
+                                <span class="product-count-minimal">2 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/animalartgiftsstudio-decals/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Animalartgiftsstudio Decals</h3>
+                                <p>Animalartgiftsstudio</p>
+                                <span class="product-count-minimal">364 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/animalartgiftsstudio-accessories/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Animalartgiftsstudio Accessories</h3>
+                                <p>Animalartgiftsstudio</p>
+                                <span class="product-count-minimal">96 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/animalartgiftsstudio-prints/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Animalartgiftsstudio Prints</h3>
+                                <p>Animalartgiftsstudio</p>
+                                <span class="product-count-minimal">22 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/animalartgiftsstudio-caps/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Animalartgiftsstudio Caps</h3>
+                                <p>Animalartgiftsstudio</p>
+                                <span class="product-count-minimal">1 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/animalartgiftsstudio-decorations/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Animalartgiftsstudio Decorations</h3>
+                                <p>Animalartgiftsstudio</p>
+                                <span class="product-count-minimal">1 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/animalartgiftsstudio-collection/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Animalartgiftsstudio Collection</h3>
+                                <p>Animalartgiftsstudio</p>
+                                <span class="product-count-minimal">2 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-artwork-decorative-pillows/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Artwork Decorative Pillows</h3>
+                                <p>Cute Animal Artwork</p>
+                                <span class="product-count-minimal">199 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-artwork-drinkware/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Artwork Drinkware</h3>
+                                <p>Cute Animal Artwork</p>
+                                <span class="product-count-minimal">5 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-artwork-cases/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Artwork Cases</h3>
+                                <p>Cute Animal Artwork</p>
+                                <span class="product-count-minimal">184 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-artwork-phone-cases/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Artwork Phone Cases</h3>
+                                <p>Cute Animal Artwork</p>
+                                <span class="product-count-minimal">14 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-artwork-pins/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Artwork Pins</h3>
+                                <p>Cute Animal Artwork</p>
+                                <span class="product-count-minimal">194 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-artwork-caps/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Artwork Caps</h3>
+                                <p>Cute Animal Artwork</p>
+                                <span class="product-count-minimal">3 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-artwork-aprons/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Artwork Aprons</h3>
+                                <p>Cute Animal Artwork</p>
+                                <span class="product-count-minimal">171 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-artwork-wall-art/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Artwork Wall Art</h3>
+                                <p>Cute Animal Artwork</p>
+                                <span class="product-count-minimal">1 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-artwork-collection/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Artwork Collection</h3>
+                                <p>Cute Animal Artwork</p>
+                                <span class="product-count-minimal">400 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-characters-cushions/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Characters Cushions</h3>
+                                <p>Cute Animal Characters</p>
+                                <span class="product-count-minimal">278 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-characters-hats/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Characters Hats</h3>
+                                <p>Cute Animal Characters</p>
+                                <span class="product-count-minimal">128 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-characters-cushions/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Characters Cushions</h3>
+                                <p>Cute Animal Characters</p>
+                                <span class="product-count-minimal">2 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-characters-drinkware/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Characters Drinkware</h3>
+                                <p>Cute Animal Characters</p>
+                                <span class="product-count-minimal">277 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-characters-bags/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Characters Bags</h3>
+                                <p>Cute Animal Characters</p>
+                                <span class="product-count-minimal">247 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-characters-tote-bags/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Characters Tote Bags</h3>
+                                <p>Cute Animal Characters</p>
+                                <span class="product-count-minimal">32 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-characters-bags/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Characters Bags</h3>
+                                <p>Cute Animal Characters</p>
+                                <span class="product-count-minimal">2 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-characters-blankets/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Characters Blankets</h3>
+                                <p>Cute Animal Characters</p>
+                                <span class="product-count-minimal">269 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-characters-wall-art/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Characters Wall Art</h3>
+                                <p>Cute Animal Characters</p>
+                                <span class="product-count-minimal">28 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-characters-graphic-tees/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Characters Graphic Tees</h3>
+                                <p>Cute Animal Characters</p>
+                                <span class="product-count-minimal">262 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-characters-tees/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Characters Tees</h3>
+                                <p>Cute Animal Characters</p>
+                                <span class="product-count-minimal">16 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-characters-graphic-tees/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Characters Graphic Tees</h3>
+                                <p>Cute Animal Characters</p>
+                                <span class="product-count-minimal">2 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-characters-caps/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Characters Caps</h3>
+                                <p>Cute Animal Characters</p>
+                                <span class="product-count-minimal">36 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-characters-pins/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Characters Pins</h3>
+                                <p>Cute Animal Characters</p>
+                                <span class="product-count-minimal">2 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cute-animal-characters-collection/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cute Animal Characters Collection</h3>
+                                <p>Cute Animal Characters</p>
+                                <span class="product-count-minimal">126 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/cutequotemugs-cute-mugs/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Cutequotemugs Cute Mugs</h3>
+                                <p>Cutequotemugs</p>
+                                <span class="product-count-minimal">389 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/everinvites-wall-art/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Everinvites Wall Art</h3>
+                                <p>Everinvites</p>
+                                <span class="product-count-minimal">1 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/everinvites-collection/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Everinvites Collection</h3>
+                                <p>Everinvites</p>
+                                <span class="product-count-minimal">30 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/folk-cases/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Folk Cases</h3>
+                                <p>Folk</p>
+                                <span class="product-count-minimal">173 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/folk-phone-cases/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Folk Phone Cases</h3>
+                                <p>Folk</p>
+                                <span class="product-count-minimal">25 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/folk-decorative-pillows/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Folk Decorative Pillows</h3>
+                                <p>Folk</p>
+                                <span class="product-count-minimal">204 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/folk-pins/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Folk Pins</h3>
+                                <p>Folk</p>
+                                <span class="product-count-minimal">28 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/folk-caps/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Folk Caps</h3>
+                                <p>Folk</p>
+                                <span class="product-count-minimal">71 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/folk-prints/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Folk Prints</h3>
+                                <p>Folk</p>
+                                <span class="product-count-minimal">44 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/folk-canvass/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Folk Canvass</h3>
+                                <p>Folk</p>
+                                <span class="product-count-minimal">1 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/folk-wall-arts/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Folk Wall arts</h3>
+                                <p>Folk</p>
+                                <span class="product-count-minimal">1 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/folk-blankets/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Folk Blankets</h3>
+                                <p>Folk</p>
+                                <span class="product-count-minimal">257 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/folk-cushions/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Folk Cushions</h3>
+                                <p>Folk</p>
+                                <span class="product-count-minimal">1 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/folk-stickers/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Folk Stickers</h3>
+                                <p>Folk</p>
+                                <span class="product-count-minimal">196 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/folk-buttons/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Folk Buttons</h3>
+                                <p>Folk</p>
+                                <span class="product-count-minimal">149 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/folk-wall-art/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Folk Wall Art</h3>
+                                <p>Folk</p>
+                                <span class="product-count-minimal">1 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/folk-aprons/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Folk Aprons</h3>
+                                <p>Folk</p>
+                                <span class="product-count-minimal">155 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/folk-collection/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Folk Collection</h3>
+                                <p>Folk</p>
+                                <span class="product-count-minimal">514 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/funnyquotetshirts-tees/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Funnyquotetshirts Tees</h3>
+                                <p>Funnyquotetshirts</p>
+                                <span class="product-count-minimal">58 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/funnyquotetshirts-t-shirts/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Funnyquotetshirts T-Shirts</h3>
+                                <p>Funnyquotetshirts</p>
+                                <span class="product-count-minimal">55 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/funnyquotetshirts-graphic-tees/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Funnyquotetshirts Graphic Tees</h3>
+                                <p>Funnyquotetshirts</p>
+                                <span class="product-count-minimal">7 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/funnyquotetshirts-t-shirts/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Funnyquotetshirts T-Shirts</h3>
+                                <p>Funnyquotetshirts</p>
+                                <span class="product-count-minimal">2 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/funnysketchtees-drinkware/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Funnysketchtees Drinkware</h3>
+                                <p>Funnysketchtees</p>
+                                <span class="product-count-minimal">571 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/funnysketchtees-t-shirts/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Funnysketchtees T-Shirts</h3>
+                                <p>Funnysketchtees</p>
+                                <span class="product-count-minimal">77 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/funnysketchtees-tees/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Funnysketchtees Tees</h3>
+                                <p>Funnysketchtees</p>
+                                <span class="product-count-minimal">126 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/funnysketchtees-t-shirts/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Funnysketchtees T-Shirts</h3>
+                                <p>Funnysketchtees</p>
+                                <span class="product-count-minimal">11 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/funnysketchtees-tees/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Funnysketchtees Tees</h3>
+                                <p>Funnysketchtees</p>
+                                <span class="product-count-minimal">1 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/kawaiicoffeelover-coffee-mugs/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Kawaiicoffeelover Coffee Mugs</h3>
+                                <p>Kawaiicoffeelover</p>
+                                <span class="product-count-minimal">318 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/kawaiicoffeelover-collection/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Kawaiicoffeelover Collection</h3>
+                                <p>Kawaiicoffeelover</p>
+                                <span class="product-count-minimal">1 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/pixgiowallart-wall-art/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Pixgiowallart Wall Art</h3>
+                                <p>Pixgiowallart</p>
+                                <span class="product-count-minimal">105 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/pixgiowallart-canvass/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Pixgiowallart Canvass</h3>
+                                <p>Pixgiowallart</p>
+                                <span class="product-count-minimal">22 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/pixgiowallart-posters/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Pixgiowallart Posters</h3>
+                                <p>Pixgiowallart</p>
+                                <span class="product-count-minimal">31 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/pixgiowallart-wall-arts/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Pixgiowallart Wall arts</h3>
+                                <p>Pixgiowallart</p>
+                                <span class="product-count-minimal">27 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/pixgiowallart-caps/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Pixgiowallart Caps</h3>
+                                <p>Pixgiowallart</p>
+                                <span class="product-count-minimal">3 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/pixgiowallart-pins/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Pixgiowallart Pins</h3>
+                                <p>Pixgiowallart</p>
+                                <span class="product-count-minimal">4 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/pixgiowallart-collection/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Pixgiowallart Collection</h3>
+                                <p>Pixgiowallart</p>
+                                <span class="product-count-minimal">1 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/roguethreads-tees/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Roguethreads Tees</h3>
+                                <p>Roguethreads</p>
+                                <span class="product-count-minimal">65 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/roguethreads-graphic-tees/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Roguethreads Graphic Tees</h3>
+                                <p>Roguethreads</p>
+                                <span class="product-count-minimal">33 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/roguethreads-t-shirts/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Roguethreads T-Shirts</h3>
+                                <p>Roguethreads</p>
+                                <span class="product-count-minimal">1 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/roguethreads-wall-art/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Roguethreads Wall Art</h3>
+                                <p>Roguethreads</p>
+                                <span class="product-count-minimal">3 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/roguethreads-decals/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Roguethreads Decals</h3>
+                                <p>Roguethreads</p>
+                                <span class="product-count-minimal">2 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/roguethreads-caps/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Roguethreads Caps</h3>
+                                <p>Roguethreads</p>
+                                <span class="product-count-minimal">2 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/roguethreads-collection/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Roguethreads Collection</h3>
+                                <p>Roguethreads</p>
+                                <span class="product-count-minimal">89 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/surfacepatternstudio-cushions/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Surfacepatternstudio Cushions</h3>
+                                <p>Surfacepatternstudio</p>
+                                <span class="product-count-minimal">621 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/surfacepatternstudio-drinkware/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Surfacepatternstudio Drinkware</h3>
+                                <p>Surfacepatternstudio</p>
+                                <span class="product-count-minimal">1 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/surfacepatternstudio-cases/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Surfacepatternstudio Cases</h3>
+                                <p>Surfacepatternstudio</p>
+                                <span class="product-count-minimal">155 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/surfacepatternstudio-accessories/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Surfacepatternstudio Accessories</h3>
+                                <p>Surfacepatternstudio</p>
+                                <span class="product-count-minimal">46 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/surfacepatternstudio-bags/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Surfacepatternstudio Bags</h3>
+                                <p>Surfacepatternstudio</p>
+                                <span class="product-count-minimal">5 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/surfacepatternstudio-pins/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Surfacepatternstudio Pins</h3>
+                                <p>Surfacepatternstudio</p>
+                                <span class="product-count-minimal">12 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/surfacepatternstudio-prints/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Surfacepatternstudio Prints</h3>
+                                <p>Surfacepatternstudio</p>
+                                <span class="product-count-minimal">3 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/surfacepatternstudio-caps/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Surfacepatternstudio Caps</h3>
+                                <p>Surfacepatternstudio</p>
+                                <span class="product-count-minimal">1 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/surfacepatternstudio-masks/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Surfacepatternstudio Masks</h3>
+                                <p>Surfacepatternstudio</p>
+                                <span class="product-count-minimal">1 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/surfacepatternstudio-bags/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Surfacepatternstudio Bags</h3>
+                                <p>Surfacepatternstudio</p>
+                                <span class="product-count-minimal">2 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/surfacepatternstudio-collection/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Surfacepatternstudio Collection</h3>
+                                <p>Surfacepatternstudio</p>
+                                <span class="product-count-minimal">274 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/vintagebotanicalart-prints/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Vintagebotanicalart Prints</h3>
+                                <p>Vintagebotanicalart</p>
+                                <span class="product-count-minimal">117 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/vintagebotanicalart-wall-arts/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Vintagebotanicalart Wall arts</h3>
+                                <p>Vintagebotanicalart</p>
+                                <span class="product-count-minimal">40 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/vintagebotanicalart-posters/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Vintagebotanicalart Posters</h3>
+                                <p>Vintagebotanicalart</p>
+                                <span class="product-count-minimal">26 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/vintagebotanicalart-canvass/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Vintagebotanicalart Canvass</h3>
+                                <p>Vintagebotanicalart</p>
+                                <span class="product-count-minimal">6 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/vintagebotanicalart-collection/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Vintagebotanicalart Collection</h3>
+                                <p>Vintagebotanicalart</p>
+                                <span class="product-count-minimal">9 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/vintagewallartstudio-canvass/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Vintagewallartstudio Canvass</h3>
+                                <p>Vintagewallartstudio</p>
+                                <span class="product-count-minimal">5 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/vintagewallartstudio-wall-art/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Vintagewallartstudio Wall Art</h3>
+                                <p>Vintagewallartstudio</p>
+                                <span class="product-count-minimal">12 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/vintagewallartstudio-prints/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Vintagewallartstudio Prints</h3>
+                                <p>Vintagewallartstudio</p>
+                                <span class="product-count-minimal">57 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/vintagewallartstudio-wall-arts/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Vintagewallartstudio Wall arts</h3>
+                                <p>Vintagewallartstudio</p>
+                                <span class="product-count-minimal">21 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="collection-card-minimal">
+                        <a href="/collections/vintagewallartstudio-collection/" class="collection-link">
+                            <div class="collection-card-inner">
+                                <h3>Vintagewallartstudio Collection</h3>
+                                <p>Vintagewallartstudio</p>
+                                <span class="product-count-minimal">5 items</span>
+                            </div>
+                        </a>
+                    </div>
+                                    </div>
+    </div>
+</section>
+
+<style>
+    .hero-minimal {
+        padding: 100px 0 80px;
+        background: white;
+        text-align: center;
+    }
+    .hero-content-minimal h1 {
+        font-size: 52px;
+        font-weight: 700;
+        color: #1a1a2e;
+        line-height: 1.2;
+        margin: 0 0 20px;
+    }
+    .hero-content-minimal h1 span {
+        color: #6c63ff;
+    }
+    .hero-content-minimal p {
+        font-size: 20px;
+        color: #666;
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn-minimal {
+        display: inline-block;
+        background: #1a1a2e;
+        color: white;
+        padding: 16px 40px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    .btn-minimal:hover {
+        background: #6c63ff;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(108, 99, 255, 0.3);
+    }
+    .collections-minimal {
+        padding: 80px 0;
+        background: #f8f9fa;
+    }
+    .collections-minimal h2 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 50px;
+        color: #1a1a2e;
+    }
+    .collection-card-minimal {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .collection-card-minimal:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .collection-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        padding: 30px;
+        text-align: center;
+    }
+    .collection-card-inner h3 {
+        font-size: 20px;
+        margin: 0 0 5px;
+        color: #1a1a2e;
+    }
+    .collection-card-inner p {
+        color: #666;
+        font-size: 14px;
+        margin: 0 0 10px;
+    }
+    .product-count-minimal {
+        display: inline-block;
+        font-size: 13px;
+        color: #999;
+        padding: 4px 12px;
+        border: 1px solid #e9ecef;
+        border-radius: 50px;
+    }
+    @media (max-width: 768px) {
+        .hero-content-minimal h1 {
+            font-size: 32px;
+        }
+    }
+</style>
+            </main>
+            <footer class="footer-minimal-dark">
+                <div class="container">
+                    <div class="footer-grid-minimal">
+                        <div class="footer-col-minimal">
+                            <h3 class="footer-logo-minimal">✦ ZazzleShop</h3>
+                            <p class="footer-desc-minimal">Discover unique products from independent creators around the world.</p>
+                            <div class="footer-social-minimal">
+                                <a href="#" aria-label="Facebook">📘</a>
+                                <a href="#" aria-label="Instagram">📸</a>
+                                <a href="#" aria-label="Twitter">🐦</a>
+                                <a href="#" aria-label="Pinterest">📌</a>
+                            </div>
+                        </div>
+                        <div class="footer-col-minimal">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="#collections">Collections</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-minimal">
+                            <h4>Support</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Shipping Policy</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-minimal">
+                            <h4>Newsletter</h4>
+                            <p class="footer-newsletter-text">Subscribe for exclusive deals and updates.</p>
+                            <form class="footer-newsletter-form">
+                                <input type="email" placeholder="Your email" required>
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer-bottom-minimal">
+                        <p>&copy; 2026 ZazzleShop. All rights reserved.</p>
+                        <div class="footer-payments-minimal">
+                            <span>💳</span>
+                            <span>🔒</span>
+                            <span>✓</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </body>
+        </html>
+        <style>
+            .footer-minimal-dark {
+                background: #1a1a2e;
+                color: rgba(255,255,255,0.8);
+                padding: 60px 0 30px;
+                margin-top: 60px;
+            }
+            .footer-grid-minimal {
+                display: grid;
+                grid-template-columns: 2fr 1fr 1fr 1.5fr;
+                gap: 40px;
+                margin-bottom: 40px;
+            }
+            .footer-logo-minimal {
+                font-size: 24px;
+                font-weight: 700;
+                color: white;
+                margin-bottom: 15px;
+                font-family: 'Inter', sans-serif;
+            }
+            .footer-desc-minimal {
+                font-size: 14px;
+                line-height: 1.6;
+                margin-bottom: 20px;
+                opacity: 0.7;
+            }
+            .footer-social-minimal {
+                display: flex;
+                gap: 15px;
+            }
+            .footer-social-minimal a {
+                color: rgba(255,255,255,0.6);
+                text-decoration: none;
+                font-size: 20px;
+                transition: all 0.3s ease;
+            }
+            .footer-social-minimal a:hover {
+                color: #6c63ff;
+                transform: translateY(-3px);
+            }
+            .footer-col-minimal h4 {
+                color: white;
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 20px;
+                font-family: 'Inter', sans-serif;
+            }
+            .footer-col-minimal ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .footer-col-minimal ul li {
+                margin-bottom: 10px;
+            }
+            .footer-col-minimal ul a {
+                color: rgba(255,255,255,0.7);
+                text-decoration: none;
+                font-size: 14px;
+                transition: color 0.3s ease;
+            }
+            .footer-col-minimal ul a:hover {
+                color: #6c63ff;
+            }
+            .footer-newsletter-text {
+                font-size: 14px;
+                opacity: 0.7;
+                margin-bottom: 15px;
+            }
+            .footer-newsletter-form {
+                display: flex;
+                gap: 10px;
+            }
+            .footer-newsletter-form input {
+                flex: 1;
+                padding: 10px 15px;
+                border: 1px solid rgba(255,255,255,0.1);
+                border-radius: 4px;
+                background: rgba(255,255,255,0.05);
+                color: white;
+                font-size: 14px;
+            }
+            .footer-newsletter-form input::placeholder {
+                color: rgba(255,255,255,0.3);
+            }
+            .footer-newsletter-form input:focus {
+                outline: none;
+                border-color: #6c63ff;
+            }
+            .footer-newsletter-form button {
+                padding: 10px 20px;
+                background: #6c63ff;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background 0.3s ease;
+                white-space: nowrap;
+            }
+            .footer-newsletter-form button:hover {
+                background: #5a52d5;
+            }
+            .footer-bottom-minimal {
+                border-top: 1px solid rgba(255,255,255,0.05);
+                padding-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 13px;
+                opacity: 0.6;
+            }
+            .footer-payments-minimal {
+                display: flex;
+                gap: 15px;
+                font-size: 24px;
+            }
+            @media (max-width: 768px) {
+                .footer-grid-minimal {
+                    grid-template-columns: 1fr;
+                    gap: 30px;
+                }
+                .footer-newsletter-form {
+                    flex-direction: column;
+                }
+                .footer-bottom-minimal {
+                    flex-direction: column;
+                    gap: 15px;
+                    text-align: center;
+                }
+            }
+        </style>

@@ -1,0 +1,190 @@
+/* themes/style/2.css - Bold & Vibrant Theme */
+:root {
+    --primary: #ff6b6b;
+    --primary-dark: #ee5a24;
+    --secondary: #feca57;
+    --accent: #ff9ff3;
+    --gradient-start: #ff6b6b;
+    --gradient-end: #feca57;
+    --text-primary: #2d3436;
+    --text-secondary: #636e72;
+    --text-light: #b2bec3;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-dark: #2d3436;
+    --border-color: #dfe6e9;
+    --shadow: 0 4px 6px rgba(255, 107, 107, 0.1);
+    --shadow-hover: 0 10px 30px rgba(255, 107, 107, 0.2);
+    --radius: 16px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+    padding: 14px 35px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(255, 107, 107, 0.4);
+}
+
+/* Product Cards */
+.product-card {
+    background: var(--bg-primary);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border-left: 4px solid var(--primary);
+}
+
+.product-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: var(--shadow-hover);
+    border-left-color: var(--secondary);
+}
+
+.product-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 8px;
+}
+
+.product-price {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--primary);
+    margin: 0 0 12px;
+}
+
+.buy-btn {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 100%;
+    font-size: 15px;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.2);
+}
+
+.buy-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(255, 107, 107, 0.3);
+}
+
+/* Collection Cards */
+.collection-card {
+    background: var(--bg-primary);
+    border-radius: var(--radius);
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.collection-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+    transform: scaleX(0);
+    transition: var(--transition);
+}
+
+.collection-card:hover::after {
+    transform: scaleX(1);
+}
+
+.collection-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: var(--shadow-hover);
+}
+
+.shop-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+    padding: 12px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: var(--transition);
+    margin-top: 15px;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.2);
+}
+
+.shop-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(255, 107, 107, 0.3);
+}
+
+/* Pagination */
+.pagination a {
+    padding: 12px 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: var(--transition);
+    font-weight: 600;
+}
+
+.pagination a:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.2);
+}
+
+.pagination .active {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+    border-color: var(--primary);
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+}

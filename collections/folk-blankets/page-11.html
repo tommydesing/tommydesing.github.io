@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Folk Blankets at Folk</title>
+    <meta name="description" content="Find amazing Folk Blankets at Folk. Featuring the latest folk, blankets trends and styles.">
+    <link rel="stylesheet" href="/assets/css/utilities.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .header-dark {
+            background: #0a0a0a;
+            padding: 20px 0;
+            border-bottom: 1px solid #1a1a1a;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-dark {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-dark {
+            font-family: 'Poppins', sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .nav-links-dark {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+        .nav-links-dark a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            padding: 5px 0;
+            position: relative;
+        }
+        .nav-links-dark a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+            transition: width 0.3s ease;
+        }
+        .nav-links-dark a:hover {
+            color: white;
+        }
+        .nav-links-dark a:hover::before {
+            width: 100%;
+        }
+        .nav-cta-dark {
+            background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+            color: white !important;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600 !important;
+            transition: all 0.3s ease !important;
+        }
+        .nav-cta-dark::before {
+            display: none !important;
+        }
+        .nav-cta-dark:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 210, 255, 0.3);
+            color: white !important;
+        }
+        .nav-search-dark {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 8px 15px;
+            border-radius: 50px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            width: 200px;
+            transition: all 0.3s ease;
+        }
+        .nav-search-dark:focus {
+            outline: none;
+            border-color: #00d2ff;
+            background: rgba(255,255,255,0.1);
+        }
+        .nav-search-dark::placeholder {
+            color: rgba(255,255,255,0.3);
+        }
+        .mobile-toggle-dark {
+            display: none;
+            background: none;
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 8px 12px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        @media (max-width: 768px) {
+            .mobile-toggle-dark {
+                display: block;
+            }
+            .nav-links-dark {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 80px;
+                left: 20px;
+                right: 20px;
+                background: #0a0a0a;
+                padding: 25px;
+                border-radius: 12px;
+                border: 1px solid #1a1a1a;
+                gap: 15px;
+            }
+            .nav-links-dark.active {
+                display: flex;
+            }
+            .nav-search-dark {
+                width: 100%;
+            }
+            .nav-cta-dark {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header-dark">
+        <div class="container">
+            <nav class="nav-dark">
+                <a href="/" class="logo-dark">✦ ZazzleShop</a>
+                <button class="mobile-toggle-dark" onclick="this.nextElementSibling.classList.toggle('active')">☰</button>
+                <ul class="nav-links-dark">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><input type="text" class="nav-search-dark" placeholder="Search products..."></li>
+                    <li><a href="/collections" class="nav-cta-dark">Shop Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+<div class="collection-hero-modern">
+    <div class="container">
+        <div class="collection-hero-content">
+
+            <div class="collection-breadcrumb">
+                <a href="/">Home</a>
+                <span>/</span>
+                <a href="#collections">Collections</a>
+                <span>/</span>
+                <span class="current">
+                    Folk Blankets                </span>
+            </div>
+
+            <h1>Folk Blankets</h1>
+
+            <p>Welcome to our exclusive Folk Blankets collection at Folk. Discover the perfect folk, blankets for your home and lifestyle.</p>
+            <div class="collection-meta">
+                <span class="product-count-badge">
+                    12 Products
+                </span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="collection-products-modern">
+    <div class="container">
+
+        <div class="collection-toolbar">
+            <div class="toolbar-left">
+                <span class="results-count">
+                    Showing 12 products
+                </span>
+            </div>
+
+            <div class="toolbar-right">
+                <select class="sort-select">
+                    <option>Sort by: Featured</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Newest</option>
+                </select>
+
+                <div class="view-options">
+                    <button class="view-grid active">⊞</button>
+                    <button class="view-list">≡</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+                    <div class="product-card">
+            <a href="https://www.zazzle.com/tengu_mountain_pine_throw_blanket-256303553284167431" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/tengu_mountain_pine_throw_blanket-r4aef8f4122a1415596f37617831acc0b_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Tengu Mountain Pine Throw Blanket" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Tengu Mountain Pine Throw Blanket</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/coiled_naga_serpent_throw_blanket-256315957839076006" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/coiled_naga_serpent_throw_blanket-r348a93b9018f4018b802d649313b8349_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Coiled Naga Serpent Throw Blanket" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Coiled Naga Serpent Throw Blanket</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/sphinx_desert_palace_throw_blanket-256098400890584377" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/sphinx_desert_palace_throw_blanket-r55ce58a1b5264f4798edb71229ee9e32_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Sphinx Desert Palace Throw Blanket" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Sphinx Desert Palace Throw Blanket</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/pegasus_cloud_meadow_throw_blanket-256361914674607452" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/pegasus_cloud_meadow_throw_blanket-r845bdad8ca97452f842fa1d4d4277924_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Pegasus Cloud Meadow Throw Blanket" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Pegasus Cloud Meadow Throw Blanket</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/hydra_swamp_mist_throw_blanket-256187703289834486" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/hydra_swamp_mist_throw_blanket-rb516743f43d14a84b5f3446b50f94efa_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Hydra Swamp Mist Throw Blanket" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Hydra Swamp Mist Throw Blanket</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/fire_breathing_chimera_throw_blanket-256310206028569315" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/fire_breathing_chimera_throw_blanket-r88b4b569d4dc4cb6b66741909aea7dcd_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Fire-Breathing Chimera Throw Blanket" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Fire-Breathing Chimera Throw Blanket</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/storm_thunderbird_throw_blanket-256967373896382785" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/storm_thunderbird_throw_blanket-r3cf45af799f245f7951ce39adfdf2a28_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Storm Thunderbird Throw Blanket" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Storm Thunderbird Throw Blanket</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/mythical_yeti_throw_blanket-256085833391988777" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/mythical_yeti_throw_blanket-r5f1cd875cea04dff8a3a93298a2a69ad_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Mythical Yeti Throw Blanket" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Mythical Yeti Throw Blanket</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/river_kappa_spirit_throw_blanket_lily_pond-256291557496698450" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/river_kappa_spirit_throw_blanket_lily_pond-rec1620461165417cb4ee759ced36e647_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="River Kappa Spirit Throw Blanket – Lily Pond" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">River Kappa Spirit Throw Blanket – Lily Pond</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/autumn_lantern_tanuki_throw_blanket-256251094107800990" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/autumn_lantern_tanuki_throw_blanket-r33838e3855ee460baa3a88c1778166e7_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Autumn Lantern Tanuki Throw Blanket" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Autumn Lantern Tanuki Throw Blanket</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/lucky_jackalope_throw_blanket-256263523673819595" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/lucky_jackalope_throw_blanket-rbe9129dccf914189a944fea17e270818_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Lucky Jackalope Throw Blanket" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Lucky Jackalope Throw Blanket</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                <div class="product-card">
+            <a href="https://www.zazzle.com/nordic_wolf_throw_blanket_valkyrie_design-256564092721482354" target="_blank" rel="noopener noreferrer">
+                <img src="https://rlv.zcache.com/nordic_wolf_throw_blanket_valkyrie_design-r4d754574b35f4c9a824a14fa0b69457e_zikrk_1024.jpg?rlvnet=1&amp;amp;max_dim=220" alt="Nordic Wolf Throw Blanket – Valkyrie Design" class="product-image" loading="lazy">
+                <div class="product-info">
+                    <h3 class="product-title">Nordic Wolf Throw Blanket – Valkyrie Design</h3>
+                    <p class="product-price">$92.70</p>
+                    <button class="buy-btn">View Product</button>
+                </div>
+            </a>
+        </div>
+                </div>
+
+        <div class="pagination"><a href="/collections/folk-blankets/page-10.html">‹ Previous</a><a href="/collections/folk-blankets/">1</a><span>...</span><a href="/collections/folk-blankets/page-9.html">9</a><a href="/collections/folk-blankets/page-10.html">10</a><span class="active">11</span><a href="/collections/folk-blankets/page-12.html">12</a><a href="/collections/folk-blankets/page-13.html">13</a><span>...</span><a href="/collections/folk-blankets/page-22.html">22</a><a href="/collections/folk-blankets/page-12.html">Next ›</a></div>
+    </div>
+</div>
+
+<style>
+    .collection-hero-modern {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 60px 0 40px;
+        margin-bottom: 40px;
+    }
+
+    .collection-breadcrumb {
+        font-size: 14px;
+        opacity: 0.8;
+        margin-bottom: 15px;
+    }
+
+    .collection-breadcrumb a {
+        color: white;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .collection-breadcrumb a:hover {
+        opacity: 0.7;
+    }
+
+    .collection-breadcrumb span {
+        margin: 0 8px;
+    }
+
+    .collection-breadcrumb .current {
+        opacity: 0.6;
+    }
+
+    .collection-hero-content h1 {
+        font-size: 40px;
+        margin: 0 0 15px;
+    }
+
+    .collection-hero-content p {
+        font-size: 18px;
+        opacity: 0.9;
+        max-width: 600px;
+        line-height: 1.6;
+    }
+
+    .collection-meta {
+        margin-top: 20px;
+    }
+
+    .product-count-badge {
+        display: inline-block;
+        background: rgba(255,255,255,0.2);
+        padding: 6px 18px;
+        border-radius: 50px;
+        font-size: 14px;
+        backdrop-filter: blur(10px);
+    }
+
+    .collection-products-modern {
+        padding-bottom: 60px;
+    }
+
+    .collection-toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        padding: 15px 0;
+        border-bottom: 1px solid #e9ecef;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .toolbar-left {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .results-count {
+        font-size: 14px;
+        color: #666;
+    }
+
+    .toolbar-right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .sort-select {
+        padding: 8px 15px;
+        border: 1px solid #e9ecef;
+        border-radius: 6px;
+        background: white;
+        font-size: 14px;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .sort-select:focus {
+        outline: none;
+        border-color: #667eea;
+    }
+
+    .view-options {
+        display: flex;
+        gap: 5px;
+    }
+
+    .view-options button {
+        padding: 6px 10px;
+        border: 1px solid #e9ecef;
+        background: white;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        color: #999;
+    }
+
+    .view-options button.active {
+        background: #667eea;
+        border-color: #667eea;
+        color: white;
+    }
+
+    .view-options button:hover:not(.active) {
+        background: #f8f9fa;
+    }
+
+    @media (max-width: 768px) {
+        .collection-hero-content h1 {
+            font-size: 28px;
+        }
+
+        .collection-toolbar {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .toolbar-right {
+            flex-wrap: wrap;
+        }
+
+        .sort-select {
+            flex: 1;
+        }
+    }
+</style>            </main>
+            <footer class="footer-minimal-dark">
+                <div class="container">
+                    <div class="footer-grid-minimal">
+                        <div class="footer-col-minimal">
+                            <h3 class="footer-logo-minimal">✦ ZazzleShop</h3>
+                            <p class="footer-desc-minimal">Discover unique products from independent creators around the world.</p>
+                            <div class="footer-social-minimal">
+                                <a href="#" aria-label="Facebook">📘</a>
+                                <a href="#" aria-label="Instagram">📸</a>
+                                <a href="#" aria-label="Twitter">🐦</a>
+                                <a href="#" aria-label="Pinterest">📌</a>
+                            </div>
+                        </div>
+                        <div class="footer-col-minimal">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="#collections">Collections</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-minimal">
+                            <h4>Support</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Shipping Policy</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-minimal">
+                            <h4>Newsletter</h4>
+                            <p class="footer-newsletter-text">Subscribe for exclusive deals and updates.</p>
+                            <form class="footer-newsletter-form">
+                                <input type="email" placeholder="Your email" required>
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer-bottom-minimal">
+                        <p>&copy; 2026 ZazzleShop. All rights reserved.</p>
+                        <div class="footer-payments-minimal">
+                            <span>💳</span>
+                            <span>🔒</span>
+                            <span>✓</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </body>
+        </html>
+        <style>
+            .footer-minimal-dark {
+                background: #1a1a2e;
+                color: rgba(255,255,255,0.8);
+                padding: 60px 0 30px;
+                margin-top: 60px;
+            }
+            .footer-grid-minimal {
+                display: grid;
+                grid-template-columns: 2fr 1fr 1fr 1.5fr;
+                gap: 40px;
+                margin-bottom: 40px;
+            }
+            .footer-logo-minimal {
+                font-size: 24px;
+                font-weight: 700;
+                color: white;
+                margin-bottom: 15px;
+                font-family: 'Inter', sans-serif;
+            }
+            .footer-desc-minimal {
+                font-size: 14px;
+                line-height: 1.6;
+                margin-bottom: 20px;
+                opacity: 0.7;
+            }
+            .footer-social-minimal {
+                display: flex;
+                gap: 15px;
+            }
+            .footer-social-minimal a {
+                color: rgba(255,255,255,0.6);
+                text-decoration: none;
+                font-size: 20px;
+                transition: all 0.3s ease;
+            }
+            .footer-social-minimal a:hover {
+                color: #6c63ff;
+                transform: translateY(-3px);
+            }
+            .footer-col-minimal h4 {
+                color: white;
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 20px;
+                font-family: 'Inter', sans-serif;
+            }
+            .footer-col-minimal ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .footer-col-minimal ul li {
+                margin-bottom: 10px;
+            }
+            .footer-col-minimal ul a {
+                color: rgba(255,255,255,0.7);
+                text-decoration: none;
+                font-size: 14px;
+                transition: color 0.3s ease;
+            }
+            .footer-col-minimal ul a:hover {
+                color: #6c63ff;
+            }
+            .footer-newsletter-text {
+                font-size: 14px;
+                opacity: 0.7;
+                margin-bottom: 15px;
+            }
+            .footer-newsletter-form {
+                display: flex;
+                gap: 10px;
+            }
+            .footer-newsletter-form input {
+                flex: 1;
+                padding: 10px 15px;
+                border: 1px solid rgba(255,255,255,0.1);
+                border-radius: 4px;
+                background: rgba(255,255,255,0.05);
+                color: white;
+                font-size: 14px;
+            }
+            .footer-newsletter-form input::placeholder {
+                color: rgba(255,255,255,0.3);
+            }
+            .footer-newsletter-form input:focus {
+                outline: none;
+                border-color: #6c63ff;
+            }
+            .footer-newsletter-form button {
+                padding: 10px 20px;
+                background: #6c63ff;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background 0.3s ease;
+                white-space: nowrap;
+            }
+            .footer-newsletter-form button:hover {
+                background: #5a52d5;
+            }
+            .footer-bottom-minimal {
+                border-top: 1px solid rgba(255,255,255,0.05);
+                padding-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 13px;
+                opacity: 0.6;
+            }
+            .footer-payments-minimal {
+                display: flex;
+                gap: 15px;
+                font-size: 24px;
+            }
+            @media (max-width: 768px) {
+                .footer-grid-minimal {
+                    grid-template-columns: 1fr;
+                    gap: 30px;
+                }
+                .footer-newsletter-form {
+                    flex-direction: column;
+                }
+                .footer-bottom-minimal {
+                    flex-direction: column;
+                    gap: 15px;
+                    text-align: center;
+                }
+            }
+        </style>
